@@ -1,0 +1,107 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+    min-height: auto;
+    background-color: #3498DB;
+}
+.FooterNavsContainer{
+    display: flex;
+justify-content: space-around;
+
+}
+.FooterAllUlContainer ul {
+    overflow: hidden;
+    list-style-type: none;
+    float: left;
+    padding-left: 20px;
+    padding-right: 45px;
+}
+
+.FooterNav {
+    font-family: system, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Segoe WP',
+        Roboto, Ubuntu, Oxygen, Cantarell, 'Fira Sans', 'Helvetica Neue', Helvetica,
+        'Lucida Grande', 'Droid Sans', Tahoma, 'Microsoft Sans Serif', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    -webkit-transition: opacity 250ms ease 0s;
+    transition: opacity 250ms ease 0s;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul.FooterNav li {
+    margin: 10px;
+}
+
+ul.FooterNav+li {
+    color: rgb(255, 255, 255);
+}
+
+.FooterNav li a {
+    color: #fff;
+    opacity: .7;
+}
+
+.FooterNav li a:hover {
+    opacity: 1;
+}
+.FooterBottomNav {
+    padding-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.FooterBottomNav a {
+    color: white;
+    font-family: system, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Segoe WP',
+        Roboto, Ubuntu, Oxygen, Cantarell, 'Fira Sans', 'Helvetica Neue', Helvetica,
+        'Lucida Grande', 'Droid Sans', Tahoma, 'Microsoft Sans Serif', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    border: .5px solid #8a8a8a;
+    border-radius: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 7px;
+    margin-left: 7px;
+    transition: all .2s ease;
+}
+
+.FooterBottomNav div {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.FooterBottomNav a:hover {
+    border-color: white;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.сopyright {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.сopyright span {
+    font-family: system, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Segoe WP',
+        Roboto, Ubuntu, Oxygen, Cantarell, 'Fira Sans', 'Helvetica Neue', Helvetica,
+        'Lucida Grande', 'Droid Sans', Tahoma, 'Microsoft Sans Serif', sans-serif;
+    color: #fff;
+    margin: 0 auto 2px;
+    opacity: .6;
+    text-align: center;
+    width: 570px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}

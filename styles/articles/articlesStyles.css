@@ -1,0 +1,177 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|PT+Sans+Caption&subset=latin,cyrillic);
+
+.articleBlockContainer {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    /* Параметры тени */
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+    margin-top: 270px;
+    max-width: 80%;
+}
+
+.aboutUs {
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 5px;
+    margin: 50px;
+    padding: 30px 55px 30px 55px;
+    background-color: #3498DB;
+    color: #0d314b;
+    overflow-x: hidden;
+}
+
+.aboutUs div span {
+    font-style: italic;
+    font-size: 15pt;
+}
+
+.aboutUs div span p {
+    font-style: normal;
+    margin-bottom: 20px;
+    font-size: 25pt;
+    font-weight: 700;
+}
+
+.healthCare {
+    display: flex;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Параметры тени */
+    max-width: 100%;
+    border-radius: 5px;
+    margin: 50px;
+    background-color: #3498DB;
+}
+
+.healthCareImage {
+    border-radius: 5px;
+    float: left;
+    padding-right: 25px;
+    max-width: 60%;
+    min-width: auto;
+    max-height: auto;
+}
+
+.healthCareText {
+    margin: 0;
+    color: #0d314b;
+    padding: 10px;
+    font-size: 12pt;
+}
+
+.healthCareText span p {
+    margin-bottom: 10px;
+    font-size: 15pt;
+    font-weight: 400;
+}
+
+.healthCareText span ul {
+    margin-top: 10px;
+    margin-left: auto;
+    list-style-position: inside;
+}
+
+.healthCareText a {
+    font-weight: 700;
+    font-size: 14pt;
+    overflow-x: hidden;
+    max-width: 250px;
+    background-color: rgb(255, 145, 0);
+    padding: 10px 30px 10px 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.healthCareText a:hover {
+    background-color: rgb(231, 131, 0);
+    outline: none;
+    transition: all 0.4s ease;
+}
+
+.healthCareText a:active {
+    background-color: rgb(255, 108, 255);
+    outline: none;
+    transition: all 0.1s ease;
+}
+
+.didYouKnow {
+    max-width: 162vh;
+    max-height: 400px;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px 35px 20px 35px;
+    color: #0d314b;
+    overflow-x: hidden;
+}
+
+.didYouKnow div span {
+    margin-bottom: 20px;
+    font-size: 16pt;
+    font-weight: 400;
+}
+
+.didYouKnow div span p {
+    margin-bottom: 20px;
+    font-size: 25pt;
+    font-weight: 700;
+}
+
+.didYouKnow .healthCareText {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.newsLetterImage {
+    border-radius: 5px;
+    float: right;
+    padding-left: 25px;
+    max-width: auto;
+    min-width: auto;
+    max-height: 100%;
+}
+.newsLetterInputUl{
+    display: flex;
+    flex-wrap: wrap;
+}
+.newsLetterInputUl li{
+    list-style-type: none;
+    margin-top: 10px;
+}
+.newsLetterInputUl li input{
+    background-color: transparent;
+    border-style: solid;
+    border-width: .5px;
+    border-radius: 5px;
+    border-color: black;
+    width: 200px;
+    min-height: 30px;
+    margin: 0px 25px 0px 0px;
+    outline: none;
+}
+.newsLetterInputUl li input:focus{
+    border-color: rgb(163, 38, 0);
+}
+
+.newsLetterInputUl li p{
+    margin-bottom: 0;
+    font-size: 14pt;
+    min-height: 30px;
+}
+.NewsLetterButton{
+    margin: 30px 0 0 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

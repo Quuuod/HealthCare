@@ -1,0 +1,29 @@
+.links a {
+    color: black;
+    padding: 12px 16px;
+    margin: 0px 10px 0 10px;
+    text-decoration: none;
+    background-color: #3498DB;
+    border-radius: 15px;
+    transition: all 0.1s ease;
+}
+
+.links a:hover {
+    background-color: #2980B9;
+    outline: none;
+    transition: all 0.4s ease;
+}
+
+.links a:active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 154, 255);
+    outline: none;
+    transition: all 0.1s ease;
+}
+
+.line {
+    border-left: 1px solid rgb(0, 0, 0);
+    height: 50px;
+    display: inline-flex;
+    align-self: center;
+}

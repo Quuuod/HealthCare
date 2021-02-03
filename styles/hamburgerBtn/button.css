@@ -1,0 +1,101 @@
+.dropbtn {
+    background-color: #3498DB;
+    background-image: url(hamburger.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    border-style: solid;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover {
+    background-color: #2980B9;
+    outline: none;
+}
+
+.infocus {
+    border-color: rgb(255, 154, 255);
+    background-image: url(hamburgerActive.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-flex;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    transition: all 0.42s ease;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content.top {
+    margin-top: 85px;
+    transition: all 0.42s ease;
+    font-size: 22pt;
+}
+
+.dropdown-content.scrolled {
+    margin-top: 65px;
+    transition: all 0.42s ease;
+    font-size: 18pt;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #2980B9;
+    outline: none;
+    transition: all 0.1s ease;
+}
+
+.dropdown-content a:active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 154, 255);
+    outline: none;
+    transition: all 0.1s ease;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+button.top {
+    height: 60px;
+    width: 60px;
+    margin: 12px;
+    padding: 12px;
+    background-size: 35px;
+    transition: all 0.4s ease;
+}
+
+button.scrolled {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    padding: 5px;
+    background-size: 30px;
+    transition: all 0.4s ease;
+}
