@@ -1,29 +1,70 @@
-.links a {
-    color: black;
-    padding: 12px 16px;
-    margin: 0px 10px 0 10px;
-    text-decoration: none;
-    background-color: #3498DB;
-    border-radius: 15px;
-    transition: all 0.1s ease;
+.header .menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.links a:hover {
-    background-color: #2980B9;
-    outline: none;
-    transition: all 0.4s ease;
+.header .menu div {
+    margin: 0 15px;
 }
 
-.links a:active {
-    color: rgb(255, 255, 255);
+.header .menu .menu__list .menu__list-item {
+    display: inline;
+}
+
+.header .menu .menu__list .menu__list-item a{
+    padding-right: 40px;
+    padding: 6px 12px;
+    margin: 0px 12px 0 12px;
+    border-radius: 5px;
+}
+
+.header .menu .menu__list .menu__list-item a:hover {
     background-color: rgb(255, 154, 255);
     outline: none;
-    transition: all 0.1s ease;
+    transition: all 0.4s;
 }
 
-.line {
+.header .menu .menu__list .menu__list-item a:active {
+    color: white;
+    background-color: rgb(228, 135, 228);
+    outline: none;
+    transition: all 0.1s;
+}
+
+
+.menu__line {
     border-left: 1px solid rgb(0, 0, 0);
     height: 50px;
     display: inline-flex;
     align-self: center;
+}
+
+.menu__search {
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.5px solid rgb(102, 156, 255);
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__search:hover {
+    border: 0.5px solid rgb(80, 122, 201);
+    transition: all 0.4s;
+}
+
+.menu__search:focus-within {
+    border: 0.5px solid rgb(73, 111, 180);
+    background-color: rgb(247, 247, 247);
+    transition: all 0.4s;
+}
+
+.menu__search-input {
+    font-size: 12pt;
+    border: none;
+    outline: none;
+    background: none;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class='preload'>
 
 <head>
     <meta charset="UTF-8">
@@ -8,17 +8,21 @@
 
     <link rel="stylesheet" href="styles/body/bodyStyles.css" />
     <link rel="stylesheet" href="styles/headerLinks/links.css" />
-    <link rel="stylesheet" href="styles/hamburgerBtn/button.css" />
     <link rel="stylesheet" href="styles/articles/articlesStyles.css" />
+    <!-- 
+    <link rel="stylesheet" href="styles/hamburgerBtn/button.css" />
+     
     <link rel="stylesheet" href="styles/footer/footer.css" />
     <script src="javascript/dropDownButton.js" defer></script>
-    <script src="javascript/HeaderResizeWhenScrolled.js" defer></script>
+     -->
     <script src="preloadAnimation.js"></script>
+    <script src="javascript/HeaderResizeWhenScrolled.js" defer></script>
+
 
 </head>
 
 <body class='body'>
-    <header class='header'>
+    <header class='header top'>
         <!-- <div class="dropdown">
             <button class="dropbtn top"></button>
             <div id="myDropdown" class="dropdown-content top">
@@ -28,91 +32,108 @@
             </div>
         </div> -->
         <nav class="menu">
-            <ul class='menu__list'>
-                <li class='menu__list-item'>
-                    <a class="menu__list-link" href="#">Link 1</a>
-                </li>
-                <li class='menu__list-item'>
-                    <a class="menu__list-link" href="#">Link 2</a>
-                </li>
-                <li class='menu__list-item'>
-                    <a class="menu__list-link" href="#">Link 3</a>
-                </li>
-                <li class='menu__list-item'>
-                    <a class="menu__list-link" href="#">Link 4</a>
-                </li>
-                <li class='menu__list-item'>
-                    <a class="menu__list-link" href="#">Link 5</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="menu__line"></div>
-        <div class='menu__search'>
-            <a href="#">Поиск</a>
-        </div>
-    </header>
-    <section class='aboutus'>
-        <div class="container">
-            <div class="aboutus__inner">
-                <h2 class="aboutus__title">What is Biotechnology?</h2>
-                <p class="aboutus__text">
-                    At its simplest, biotechnology is technology based on biology - biotechnology harnesses cellular
-                    and
-                    biomolecular processes to develop technologies and products that help improve our lives and the
-                    health of our planet. We have used the biological processes of microorganisms for more than
-                    6,000
-                    years to make useful food products, such as bread and cheese, and to preserve dairy products.
-                </p>
+            <div class="menu__list-container">
+                <ul class='menu__list'>
+                    <li class='menu__list-item'>
+                        <a class="menu__list-link" href="#">Link 1</a>
+                    </li>
+                    <li class='menu__list-item'>
+                        <a class="menu__list-link" href="#">Link 2</a>
+                    </li>
+                    <li class='menu__list-item'>
+                        <a class="menu__list-link" href="#">Link 3</a>
+                    </li>
+                    <li class='menu__list-item'>
+                        <a class="menu__list-link" href="#">Link 4</a>
+                    </li>
+                    <li class='menu__list-item'>
+                        <a class="menu__list-link" href="#">Link 5</a>
+                    </li>
+                    <li class='menu__list-item'>
+                        <a class="menu__list-link" href="#">Link 6</a>
+                    </li>
+                    <li class='menu__list-item'>
+                        <a class="menu__list-link" href="#">Link 7</a>
+                    </li>
+                    <li class='menu__list-item'>
+                        <a class="menu__list-link" href="#">Link 8</a>
+                    </li>
+                </ul>
             </div>
-            <section class='health'>
-                <div class="container">
-                    <div class="health__inner">
-                        <img class='health__img' src="styles/articles/healthCare.jpg" alt="Ошибка">
-                        <div class='helth__text'>
-                            <span>
-                                <h2 class='health__title'>HEAL THE WORLD</h2>
-                                <p class="health__text">is helping to heal the world by harnessing nature's own toolbox
-                                    and using our own genetic makeup to heal and guide lines of research by:
-                                </p>
-                                <ul class="health__list">
-                                    <li class="health__list-item">Reducing rates of infectious disease;
-                                    </li>
-                                    <li class="health__list-item">Saving millions of children's lives;
-                                    </li>
-                                    <li class="health__list-item">Changing the odds of serious, life-threatening
-                                        conditions affecting millions around
-                                        the world;</li>
-                                    <li class="health__list-item">Tailoring treatments to individuals to minimize health
-                                        risks and side effects;
-                                    </li>
-                                    <li class="health__list-item">Creating more precise tools for disease detection;
-                                    </li>
-                                    <li class="health__list-item">Combating serious illnesses and everyday threats
-                                        confronting the developing world.
-                                    </li>
-                                </ul>
-                                <a class="health__aboutus" href="#">Узнать больше о нас</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class='facts'>
-                <div class="container">
-                    <div class="facts__inner">
-                        <h2 class="facts__title">Did You Know?</h2>
-                        <p class="facts__text">
-                            BIO is the world's largest trade association representing biotechnology companies, academic
-                            institutions, state biotechnology centers and related organizations across the United States
-                            and
-                            in more than 30 other nations.
+            <div class="menu__line"></div>
+            <div class='menu__search'>
+                <input class="menu__search-input" type="text" placeholder="Поиск">
+            </div>
+        </nav>
+    </header>
 
-                            We offer membership, events, industry analysis reports and more that serve the entire
-                            spectrum
-                            of the biotech industr
-                        </p>
+    <main class='main'>
+        <section class='aboutus'>
+            <div class="container">
+                <div class="aboutus__inner">
+                    <h2 class="aboutus__title">What is Biotechnology?</h2>
+                    <p class="aboutus__text">
+                        At its simplest, biotechnology is technology based on biology - biotechnology harnesses cellular
+                        and
+                        biomolecular processes to develop technologies and products that help improve our lives and the
+                        health of our planet. We have used the biological processes of microorganisms for more than
+                        6,000
+                        years to make useful food products, such as bread and cheese, and to preserve dairy products.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class='health'>
+            <div class="container">
+                <div class="health__inner">
+                    <div class="health__img-container"></div>
+                    <div class='health__text-container'>
+                        <span>
+                            <h2 class='health__title'>HEAL THE WORLD</h2>
+                            <p class="health__text">is helping to heal the world by harnessing nature's own toolbox
+                                and using our own genetic makeup to heal and guide lines of research by:
+                            </p>
+                            <ul class="health__list">
+                                <li class="health__list-item">Reducing rates of infectious disease;
+                                </li>
+                                <li class="health__list-item">Saving millions of children's lives;
+                                </li>
+                                <li class="health__list-item">Changing the odds of serious, life-threatening
+                                    conditions affecting millions around
+                                    the world;</li>
+                                <li class="health__list-item">Tailoring treatments to individuals to minimize health
+                                    risks and side effects;
+                                </li>
+                                <li class="health__list-item">Creating more precise tools for disease detection;
+                                </li>
+                                <li class="health__list-item">Combating serious illnesses and everyday threats
+                                    confronting the developing world.
+                                </li>
+                            </ul>
+                            <div class="health__aboutus-container">
+                                <a class="health__aboutus" >Узнать больше о нас</a>
+                            </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+        <section class='facts'>
+            <div class="container">
+                <div class="facts__inner">
+                    <h2 class="facts__title">Did You Know?</h2>
+                    <p class="facts__text">
+                        BIO is the world's largest trade association representing biotechnology companies, academic
+                        institutions, state biotechnology centers and related organizations across the United States
+                        and
+                        in more than 30 other nations.
+
+                        We offer membership, events, industry analysis reports and more that serve the entire
+                        spectrum
+                        of the biotech industr
+                    </p>
+                </div>
+            </div>
+        </section>
 
         </div>
         <section class='cooperation'>
@@ -153,83 +174,84 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
-            <div class='container'>
-                <div class='footer__inner'>
-                    <ul class='footer__list'>
-                        <li class='footer__list-item'>
-                            <h4 class="footer__list-text">article</h4>
-                        </li>
-                        <li class='footer__list-item'>
-                            <a class='footer__list-link' href='#'>Link</a>
-                        </li>
-                        <li class='footer__list-item'>
-                            <a class='footer__list-link' href='#'>Link</a>
-                        </li>
-                        <li class='footer__list-item'>
-                            <a class='footer__list-link' href='#'>Link</a>
-                        </li>
-                        <li class='footer__list-item'>
-                            <a class='footer__list-link' href='#'>Link</a>
-                        </li>
-                    </ul>
-                    <ul class='footer__list'>
-                        <li class='footer__list-item'>
-                            <h4 class="footer__list-text">article</h4>
-                        </li>
-                        <li class='footer__list-item'>
-                            <a class='footer__list-link' href='#'>Link</a>
-                        </li>
-                        <li class='footer__list-item'>
-                            <a class='footer__list-link' href='#'>Link</a>
-                        </li>
-                        <li class='footer__list-item'>
-                            <a class='footer__list-link' href='#'>Link</a>
-                        </li>
-                        <li class='footer__list-item'>
-                            <a class='footer__list-link' href='#'>Link</a>
-                        </li>
-                    </ul>
-                    <ul class='footer__list'>
-                        <li class='footer__list-item'>
-                            <h4 class="footer__list-text">article</h4>
-                        </li>
-                        <li class='footer__list-item'>
-                            <a class='footer__list-link' href='#'>Link</a>
-                        </li>
-                        <li class='footer__list-item'>
-                            <a class='footer__list-link' href='#'>Link</a>
-                        </li>
-                        <li class='footer__list-item'>
-                            <a class='footer__list-link' href='#'>Link</a>
-                        </li>
-                        <li class='footer__list-item'>
-                            <a class='footer__list-link' href='#'>Link</a>
-                        </li>
-                    </ul>
-                    <ul class='footer__list'>
-                        <li class='footer__list-item'>
-                            <h4 class="footer__list-text">article</h4>
-                        </li>
-                        <li class='footer__list-item'>
-                            <a class='footer__list-link' href='#'>Link</a>
-                        </li>
-                        <li class='footer__list-item'>
-                            <a class='footer__list-link' href='#'>Link</a>
-                        </li>
-                        <li class='footer__list-item'>
-                            <a class='footer__list-link' href='#'>Link</a>
-                        </li>
-                        <li class='footer__list-item'>
-                            <a class='footer__list-link' href='#'>Link</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class='footer__сopyright'>
-                    <p class='footer__сopyright-text'>
-                        2016-2020 © Copyright Все права защищены.
-                    </p>
-        </footer>
+    </main>
+    <footer class="footer">
+        <div class='container'>
+            <div class='footer__inner'>
+                <ul class='footer__list'>
+                    <li class='footer__list-item'>
+                        <h4 class="footer__list-text">article</h4>
+                    </li>
+                    <li class='footer__list-item'>
+                        <a class='footer__list-link' href='#'>Link</a>
+                    </li>
+                    <li class='footer__list-item'>
+                        <a class='footer__list-link' href='#'>Link</a>
+                    </li>
+                    <li class='footer__list-item'>
+                        <a class='footer__list-link' href='#'>Link</a>
+                    </li>
+                    <li class='footer__list-item'>
+                        <a class='footer__list-link' href='#'>Link</a>
+                    </li>
+                </ul>
+                <ul class='footer__list'>
+                    <li class='footer__list-item'>
+                        <h4 class="footer__list-text">article</h4>
+                    </li>
+                    <li class='footer__list-item'>
+                        <a class='footer__list-link' href='#'>Link</a>
+                    </li>
+                    <li class='footer__list-item'>
+                        <a class='footer__list-link' href='#'>Link</a>
+                    </li>
+                    <li class='footer__list-item'>
+                        <a class='footer__list-link' href='#'>Link</a>
+                    </li>
+                    <li class='footer__list-item'>
+                        <a class='footer__list-link' href='#'>Link</a>
+                    </li>
+                </ul>
+                <ul class='footer__list'>
+                    <li class='footer__list-item'>
+                        <h4 class="footer__list-text">article</h4>
+                    </li>
+                    <li class='footer__list-item'>
+                        <a class='footer__list-link' href='#'>Link</a>
+                    </li>
+                    <li class='footer__list-item'>
+                        <a class='footer__list-link' href='#'>Link</a>
+                    </li>
+                    <li class='footer__list-item'>
+                        <a class='footer__list-link' href='#'>Link</a>
+                    </li>
+                    <li class='footer__list-item'>
+                        <a class='footer__list-link' href='#'>Link</a>
+                    </li>
+                </ul>
+                <ul class='footer__list'>
+                    <li class='footer__list-item'>
+                        <h4 class="footer__list-text">article</h4>
+                    </li>
+                    <li class='footer__list-item'>
+                        <a class='footer__list-link' href='#'>Link</a>
+                    </li>
+                    <li class='footer__list-item'>
+                        <a class='footer__list-link' href='#'>Link</a>
+                    </li>
+                    <li class='footer__list-item'>
+                        <a class='footer__list-link' href='#'>Link</a>
+                    </li>
+                    <li class='footer__list-item'>
+                        <a class='footer__list-link' href='#'>Link</a>
+                    </li>
+                </ul>
+            </div>
+            <div class='footer__сopyright'>
+                <p class='footer__сopyright-text'>
+                    2016-2020 © Copyright Все права защищены.
+                </p>
+    </footer>
 </body>
 
 </html>

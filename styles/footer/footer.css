@@ -1,11 +1,11 @@
-footer {
+.footer {
     position: absolute;
     bottom: 0;
     min-width: 100%;
     min-height: auto;
     background-color: #3498DB;
 }
-.FooterNavsContainer{
+/* .FooterNavsContainer{
     display: flex;
 justify-content: space-around;
 
@@ -104,4 +104,4 @@ ul.FooterNav+li {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-}
+} */

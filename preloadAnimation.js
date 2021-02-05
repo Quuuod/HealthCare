@@ -1,3 +1,3 @@
 window.onload = function (event) {
-    document.querySelector('body').classList.remove('preload');
+    document.querySelector('html').classList.remove('preload');
 }
