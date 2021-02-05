@@ -17,212 +17,219 @@
 
 </head>
 
-<body class='preload'>
-    <header class='top'>
-        <div class="dropdown">
+<body class='body'>
+    <header class='header'>
+        <!-- <div class="dropdown">
             <button class="dropbtn top"></button>
             <div id="myDropdown" class="dropdown-content top">
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>
                 <a href="#">Link 3</a>
             </div>
-        </div>
-        <div class='links'>
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <a href="#">Link 4</a>
-            <a href="#">Link 5</a>
-            <a href="#">Link 6</a>
-        </div>
-        <div class="line"></div>
-        <div class='links'>
-            <a href="#">О Нас</a>
+        </div> -->
+        <nav class="menu">
+            <ul class='menu__list'>
+                <li class='menu__list-item'>
+                    <a class="menu__list-link" href="#">Link 1</a>
+                </li>
+                <li class='menu__list-item'>
+                    <a class="menu__list-link" href="#">Link 2</a>
+                </li>
+                <li class='menu__list-item'>
+                    <a class="menu__list-link" href="#">Link 3</a>
+                </li>
+                <li class='menu__list-item'>
+                    <a class="menu__list-link" href="#">Link 4</a>
+                </li>
+                <li class='menu__list-item'>
+                    <a class="menu__list-link" href="#">Link 5</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu__line"></div>
+        <div class='menu__search'>
             <a href="#">Поиск</a>
         </div>
-
     </header>
-
-    <main>
-        <div class='articleBlockContainer'>
-            <article class='aboutUs'>
-                <div>
-                    <span>
-                        <p>What is Biotechnology?</p>
-                        At its simplest, biotechnology is technology based on biology - biotechnology harnesses cellular
-                        and
-                        biomolecular processes to develop technologies and products that help improve our lives and the
-                        health of our planet. We have used the biological processes of microorganisms for more than
-                        6,000
-                        years to make useful food products, such as bread and cheese, and to preserve dairy products.
-                    </span>
-
-            </article>
-            <article class='healthCare'>
-
-                <div>
-                    <img class='healthCareImage' src="styles/articles/healthCare.jpg" alt="Ошибка">
-                    <div class='healthCareText'>
-
-                        <span>
-                            <p>HEAL THE WORLD</p>
-                            is helping to heal the world by harnessing nature's own toolbox
-                            and using our own genetic makeup to heal and guide lines of research by:
-                            <ul>
-                                <li>Reducing rates of infectious disease;</li>
-                                <li>Saving millions of children's lives;</li>
-                                <li>Changing the odds of serious, life-threatening conditions affecting millions around
-                                    the
-                                    world;</li>
-                                <li>Tailoring treatments to individuals to minimize health risks and side effects;</li>
-                                <li>Creating more precise tools for disease detection;</li>
-                                <li>Combating serious illnesses and everyday threats confronting the developing world.
-                                </li>
-                            </ul>
-                        </span>
-                        <div class='healthCareText'>
-                            <a href="#">Больше о нас</a>
+    <section class='aboutus'>
+        <div class="container">
+            <div class="aboutus__inner">
+                <h2 class="aboutus__title">What is Biotechnology?</h2>
+                <p class="aboutus__text">
+                    At its simplest, biotechnology is technology based on biology - biotechnology harnesses cellular
+                    and
+                    biomolecular processes to develop technologies and products that help improve our lives and the
+                    health of our planet. We have used the biological processes of microorganisms for more than
+                    6,000
+                    years to make useful food products, such as bread and cheese, and to preserve dairy products.
+                </p>
+            </div>
+            <section class='health'>
+                <div class="container">
+                    <div class="health__inner">
+                        <img class='health__img' src="styles/articles/healthCare.jpg" alt="Ошибка">
+                        <div class='helth__text'>
+                            <span>
+                                <h2 class='health__title'>HEAL THE WORLD</h2>
+                                <p class="health__text">is helping to heal the world by harnessing nature's own toolbox
+                                    and using our own genetic makeup to heal and guide lines of research by:
+                                </p>
+                                <ul class="health__list">
+                                    <li class="health__list-item">Reducing rates of infectious disease;
+                                    </li>
+                                    <li class="health__list-item">Saving millions of children's lives;
+                                    </li>
+                                    <li class="health__list-item">Changing the odds of serious, life-threatening
+                                        conditions affecting millions around
+                                        the world;</li>
+                                    <li class="health__list-item">Tailoring treatments to individuals to minimize health
+                                        risks and side effects;
+                                    </li>
+                                    <li class="health__list-item">Creating more precise tools for disease detection;
+                                    </li>
+                                    <li class="health__list-item">Combating serious illnesses and everyday threats
+                                        confronting the developing world.
+                                    </li>
+                                </ul>
+                                <a class="health__aboutus" href="#">Узнать больше о нас</a>
                         </div>
                     </div>
-
                 </div>
+            </section>
+            <section class='facts'>
+                <div class="container">
+                    <div class="facts__inner">
+                        <h2 class="facts__title">Did You Know?</h2>
+                        <p class="facts__text">
+                            BIO is the world's largest trade association representing biotechnology companies, academic
+                            institutions, state biotechnology centers and related organizations across the United States
+                            and
+                            in more than 30 other nations.
 
+                            We offer membership, events, industry analysis reports and more that serve the entire
+                            spectrum
+                            of the biotech industr
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-            </article>
         </div>
-
-        <div class='articleBlockContainer'>
-            <article class='didYouKnow'>
-                <div>
-                    <span>
-                        <p>Did You Know?</p>
-                        BIO is the world's largest trade association representing biotechnology companies, academic
-                        institutions, state biotechnology centers and related organizations across the United States and
-                        in more than 30 other nations.
-
-                        We offer membership, events, industry analysis reports and more that serve the entire spectrum
-                        of the biotech industry.
-                        <div class='healthCareText'>
-                            <a href="#">Сотрудничество с нами</a>
-                        </div>
-                    </span>
-
-
-                </div>
-            </article>
-        </div>
-
-        <div class='articleBlockContainer'>
-            <article class='healthCare'>
-
-                <div>
-                    <img class='newsLetterImage' src="styles/articles/newsLetter.png" alt="Ошибка">
-                    <div class='healthCareText'>
-
-                        <span>
-                            Sign-up to receive the Good Day BIO newsletter, the only daily newsletter at the
-                            intersection of biotech, politics and policy.
-                            <ul class='newsLetterInputUl'>
-                                <li>
-                                    <p>Имя:</p><input type="text">
-                                </li>
-                                <li>
-                                    <p>Фамилия:</p><input type="text">
-                                </li>
-                                <li>
-                                    <p>Название компании:</p><input type="text">
-                                </li>
-                                <li>
-                                    <p>Email-адрес:</p><input type="text">
-                                </li>
-                            </ul>
-                        </span>
-                        <p><input type="checkbox"> By clicking submit you agree to the Terms and Conditions of our
-                            Privacy
-                            Policy.</p>
-                        <div class='NewsLetterButton'>
-                            <a href="#">Подписаться на наши новости</a>
-                        </div>
-                    </div>
-
-
-
-
-                </div>
-
-
-            </article>
-        </div>
-
-        <footer>
-            <div class='FooterAllUlContainer'>
-                <div class='FooterNavsContainer'>
-
-                    <div>
-                        <ul class='FooterNav'>
-                            <li>article</li>
-                            <li><a href='#'>Link</a></li>
-                            <li><a href='#'>Link</a></li>
-                            <li><a href='#'>Link</a></li>
-                            <li><a href='#'>Link</a></li>
-                        </ul>
-                    </div>
-
-                    <div>
-
-                        <ul class='FooterNav'>
-                            <li>article</li>
-                            <li><a href='#'>Link</a></li>
-                            <li><a href='#'>Link</a></li>
-                            <li><a href='#'>Link</a></li>
-                            <li><a href='#'>Link</a></li>
-                        </ul>
-                    </div>
-                    <div>
-
-
-                        <ul class='FooterNav'>
-                            <li><span>article</span></li>
-                            <li><a href='#'>Link</a></li>
-                            <li><a href='#'>Link</a></li>
-                            <li><a href='#'>Link</a></li>
-                            <li><a href='#'>Link</a></li>
-                        </ul>
-                    </div>
-
-                    <div>
-
-                        <ul class='FooterNav'>
-                            <li>article</li>
-                            <li><a href='#'>Link</a></li>
-                            <li><a href='#'>Link</a></li>
-                            <li><a href='#'>Link</a></li>
-                            <li><a href='#'>Link</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class='FooterBottomNav'>
-                <div>
-                    <a><span>Link</span></a>
-                    <a><span>Link</span></a>
-                    <a><span>Link</span></a>
-                    <a><span>Link</span></a>
-                    <a><span>Link</span></a>
+        <section class='cooperation'>
+            <div class="container">
+                <div class="cooperation__inner">
+                    Sign-up to receive the Good Day BIO newsletter, the only daily newsletter at the
+                    intersection of biotech, politics and policy.
+                    <ul class='cooperation__list'>
+                        <li class='cooperation__list-item'>
+                            <p class='cooperation__list-text'>
+                                Имя:
+                            </p>
+                            <input class='cooperation__list-input' type="text">
+                        </li>
+                        <li class='cooperation__list-item'>
+                            <p class='cooperation__list-text'>
+                                Фамилия:
+                            </p>
+                            <input class='cooperation__list-input' type="text">
+                        </li>
+                        <li class='cooperation__list-item'>
+                            <p class='cooperation__list-text'>
+                                Название компании:
+                            </p>
+                            <input class='cooperation__list-input' type="text">
+                        </li>
+                        <li class='cooperation__list-item'>
+                            <p class='cooperation__list-text'>
+                                Email-адрес:
+                            </p>
+                            <input class='cooperation__list-input' type="text">
+                        </li>
+                    </ul>
+                    <input class='cooperation__checkbox' type="checkbox">
+                    <p class="cooperation__checkbox-text">By clicking submit you agree to the Terms and Conditions of ou
+                        Privacy Policy.</p>
+                    <a class='cooperation__link' href="#">Подписаться на наши новости</a>
                 </div>
             </div>
-            <div class='сopyright'>
-                <span>
-                    2016-2020 © Copyright<br />
-                    Все права защищены.
-                </span>
-            </div>
+        </section>
+        <footer class="footer">
+            <div class='container'>
+                <div class='footer__inner'>
+                    <ul class='footer__list'>
+                        <li class='footer__list-item'>
+                            <h4 class="footer__list-text">article</h4>
+                        </li>
+                        <li class='footer__list-item'>
+                            <a class='footer__list-link' href='#'>Link</a>
+                        </li>
+                        <li class='footer__list-item'>
+                            <a class='footer__list-link' href='#'>Link</a>
+                        </li>
+                        <li class='footer__list-item'>
+                            <a class='footer__list-link' href='#'>Link</a>
+                        </li>
+                        <li class='footer__list-item'>
+                            <a class='footer__list-link' href='#'>Link</a>
+                        </li>
+                    </ul>
+                    <ul class='footer__list'>
+                        <li class='footer__list-item'>
+                            <h4 class="footer__list-text">article</h4>
+                        </li>
+                        <li class='footer__list-item'>
+                            <a class='footer__list-link' href='#'>Link</a>
+                        </li>
+                        <li class='footer__list-item'>
+                            <a class='footer__list-link' href='#'>Link</a>
+                        </li>
+                        <li class='footer__list-item'>
+                            <a class='footer__list-link' href='#'>Link</a>
+                        </li>
+                        <li class='footer__list-item'>
+                            <a class='footer__list-link' href='#'>Link</a>
+                        </li>
+                    </ul>
+                    <ul class='footer__list'>
+                        <li class='footer__list-item'>
+                            <h4 class="footer__list-text">article</h4>
+                        </li>
+                        <li class='footer__list-item'>
+                            <a class='footer__list-link' href='#'>Link</a>
+                        </li>
+                        <li class='footer__list-item'>
+                            <a class='footer__list-link' href='#'>Link</a>
+                        </li>
+                        <li class='footer__list-item'>
+                            <a class='footer__list-link' href='#'>Link</a>
+                        </li>
+                        <li class='footer__list-item'>
+                            <a class='footer__list-link' href='#'>Link</a>
+                        </li>
+                    </ul>
+                    <ul class='footer__list'>
+                        <li class='footer__list-item'>
+                            <h4 class="footer__list-text">article</h4>
+                        </li>
+                        <li class='footer__list-item'>
+                            <a class='footer__list-link' href='#'>Link</a>
+                        </li>
+                        <li class='footer__list-item'>
+                            <a class='footer__list-link' href='#'>Link</a>
+                        </li>
+                        <li class='footer__list-item'>
+                            <a class='footer__list-link' href='#'>Link</a>
+                        </li>
+                        <li class='footer__list-item'>
+                            <a class='footer__list-link' href='#'>Link</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class='footer__сopyright'>
+                    <p class='footer__сopyright-text'>
+                        2016-2020 © Copyright Все права защищены.
+                    </p>
         </footer>
-    </main>
-
-
 </body>
 
 </html>
