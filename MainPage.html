@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/body/bodyStyles.css" />
     <link rel="stylesheet" href="styles/headerLinks/links.css" />
     <link rel="stylesheet" href="styles/articles/articlesStyles.css" />
+    <link rel="stylesheet" href="styles/slider/slider.css" />
     <!-- 
     <link rel="stylesheet" href="styles/hamburgerBtn/button.css" />
      
@@ -17,6 +18,7 @@
      -->
     <script src="preloadAnimation.js"></script>
     <script src="javascript/HeaderResizeWhenScrolled.js" defer></script>
+
 
 
 </head>
@@ -33,34 +35,31 @@
         </div> -->
         <nav class="menu">
             <div class="menu__list-container">
-                <ul class='menu__list'>
+                <ul class='menu__list links-top'>
                     <li class='menu__list-item'>
-                        <a class="menu__list-link" href="#">Link 1</a>
+                        <a class="menu__list-link" href="#">Главная</a>
                     </li>
                     <li class='menu__list-item'>
-                        <a class="menu__list-link" href="#">Link 2</a>
+                        <a class="menu__list-link" href="#">Запись к врачу</a>
                     </li>
                     <li class='menu__list-item'>
-                        <a class="menu__list-link" href="#">Link 3</a>
+                        <a class="menu__list-link" href="#">Наши врачи</a>
                     </li>
                     <li class='menu__list-item'>
-                        <a class="menu__list-link" href="#">Link 4</a>
+                        <a class="menu__list-link" href="#">Диагностика и лечение</a>
                     </li>
                     <li class='menu__list-item'>
-                        <a class="menu__list-link" href="#">Link 5</a>
+                        <a class="menu__list-link" href="#">Пациентам</a>
                     </li>
                     <li class='menu__list-item'>
-                        <a class="menu__list-link" href="#">Link 6</a>
+                        <a class="menu__list-link" href="#">О Нас</a>
                     </li>
                     <li class='menu__list-item'>
-                        <a class="menu__list-link" href="#">Link 7</a>
-                    </li>
-                    <li class='menu__list-item'>
-                        <a class="menu__list-link" href="#">Link 8</a>
+                        <a class="menu__list-link" href="#">Поддержка</a>
                     </li>
                 </ul>
             </div>
-            <div class="menu__line"></div>
+            <div class="menu__line line-top"></div>
             <div class='menu__search'>
                 <input class="menu__search-input" type="text" placeholder="Поиск">
             </div>
@@ -68,19 +67,35 @@
     </header>
 
     <main class='main'>
-        <section class='aboutus'>
+        <section class='aboutus slider'>
             <div class="container">
-                <div class="aboutus__inner">
-                    <h2 class="aboutus__title">What is Biotechnology?</h2>
-                    <p class="aboutus__text">
-                        At its simplest, biotechnology is technology based on biology - biotechnology harnesses cellular
-                        and
-                        biomolecular processes to develop technologies and products that help improve our lives and the
-                        health of our planet. We have used the biological processes of microorganisms for more than
-                        6,000
-                        years to make useful food products, such as bread and cheese, and to preserve dairy products.
-                    </p>
+                <div class="slider__wrapper">
+                    <div class="slider__items">
+                        <div class="slider__item">
+                            <div class='slider__item-img' style='background-image: url(slides/slide1.jpg);'></div>
+                            <a class='slider__appearing-title' href="#">Какие услуги мы предоставляем?</a>
+                        </div>
+                        <div class="slider__item">
+                            <div class='slider__item-img' style='background-image: url(slides/slide2.jpg);'></div>
+                            <a class='slider__appearing-title' href="#">Почему так важно следить за своим здоровьем?</a>
+                        </div>
+                        <div class="slider__item">
+                            <div class='slider__item-img' style='background-image: url(slides/slide3.jpg);'></div>
+                            <a class='slider__appearing-title' href="#">Психическое здоровье.</a>
+                        </div>
+                        <div class="slider__item">
+                            <div class='slider__item-img' style='background-image: url(slides/slide4.jpg);'></div>
+                            <a class='slider__appearing-title' href="#">Наши врачи.</a>
+                        </div>
+                        <div class="slider__item">
+                            <div class='slider__item-img' style='background-image: url(slides/slide5.jpg);'></div>
+                            <a class='slider__appearing-title' href="#">CoVid 19. Меры предосторожности.</a>
+                        </div>
+                    </div>
                 </div>
+                <a class="slider__control slider__control_prev" href="#" role="button"></a>
+                <a class="slider__control slider__control_next slider__control_show" href="#" role="button"></a>
+
             </div>
         </section>
         <section class='health'>
@@ -88,31 +103,30 @@
                 <div class="health__inner">
                     <div class="health__img-container"></div>
                     <div class='health__text-container'>
-                        <span>
-                            <h2 class='health__title'>HEAL THE WORLD</h2>
-                            <p class="health__text">is helping to heal the world by harnessing nature's own toolbox
-                                and using our own genetic makeup to heal and guide lines of research by:
-                            </p>
-                            <ul class="health__list">
-                                <li class="health__list-item">Reducing rates of infectious disease;
-                                </li>
-                                <li class="health__list-item">Saving millions of children's lives;
-                                </li>
-                                <li class="health__list-item">Changing the odds of serious, life-threatening
-                                    conditions affecting millions around
-                                    the world;</li>
-                                <li class="health__list-item">Tailoring treatments to individuals to minimize health
-                                    risks and side effects;
-                                </li>
-                                <li class="health__list-item">Creating more precise tools for disease detection;
-                                </li>
-                                <li class="health__list-item">Combating serious illnesses and everyday threats
-                                    confronting the developing world.
-                                </li>
-                            </ul>
-                            <div class="health__aboutus-container">
-                                <a class="health__aboutus" >Узнать больше о нас</a>
-                            </div>
+                        <h2 class='health__title'>HEAL THE WORLD</h2>
+                        <p class="health__text">is helping to heal the world by harnessing nature's own toolbox
+                            and using our own genetic makeup to heal and guide lines of research by:
+                        </p>
+                        <ul class="health__list">
+                            <li class="health__list-item">Reducing rates of infectious disease;
+                            </li>
+                            <li class="health__list-item">Saving millions of children's lives;
+                            </li>
+                            <li class="health__list-item">Changing the odds of serious, life-threatening
+                                conditions affecting millions around
+                                the world;</li>
+                            <li class="health__list-item">Tailoring treatments to individuals to minimize health
+                                risks and side effects;
+                            </li>
+                            <li class="health__list-item">Creating more precise tools for disease detection;
+                            </li>
+                            <li class="health__list-item">Combating serious illnesses and everyday threats
+                                confronting the developing world.
+                            </li>
+                        </ul>
+                        <div class="health__aboutus-container">
+                            <a class="health__aboutus">Узнать больше о нас</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,38 +153,45 @@
         <section class='cooperation'>
             <div class="container">
                 <div class="cooperation__inner">
-                    Sign-up to receive the Good Day BIO newsletter, the only daily newsletter at the
-                    intersection of biotech, politics and policy.
-                    <ul class='cooperation__list'>
-                        <li class='cooperation__list-item'>
-                            <p class='cooperation__list-text'>
-                                Имя:
-                            </p>
-                            <input class='cooperation__list-input' type="text">
-                        </li>
-                        <li class='cooperation__list-item'>
-                            <p class='cooperation__list-text'>
-                                Фамилия:
-                            </p>
-                            <input class='cooperation__list-input' type="text">
-                        </li>
-                        <li class='cooperation__list-item'>
-                            <p class='cooperation__list-text'>
-                                Название компании:
-                            </p>
-                            <input class='cooperation__list-input' type="text">
-                        </li>
-                        <li class='cooperation__list-item'>
-                            <p class='cooperation__list-text'>
-                                Email-адрес:
-                            </p>
-                            <input class='cooperation__list-input' type="text">
-                        </li>
-                    </ul>
-                    <input class='cooperation__checkbox' type="checkbox">
-                    <p class="cooperation__checkbox-text">By clicking submit you agree to the Terms and Conditions of ou
-                        Privacy Policy.</p>
-                    <a class='cooperation__link' href="#">Подписаться на наши новости</a>
+                    <div class="cooperation__text-container">
+                        <u>Sign-up</u> to receive the Good Day BIO newsletter, the only daily newsletter at the
+                        intersection of biotech, politics and policy.
+                        <ul class='cooperation__list'>
+                            <li class='cooperation__list-item'>
+                                <p class='cooperation__list-text'>
+                                    Имя:
+                                </p>
+                                <input class='cooperation__list-input' type="text">
+                            </li>
+                            <li class='cooperation__list-item'>
+                                <p class='cooperation__list-text'>
+                                    Фамилия:
+                                </p>
+                                <input class='cooperation__list-input' type="text">
+                            </li>
+                            <li class='cooperation__list-item'>
+                                <p class='cooperation__list-text'>
+                                    Название компании:
+                                </p>
+                                <input class='cooperation__list-input' type="text">
+                            </li>
+                            <li class='cooperation__list-item'>
+                                <p class='cooperation__list-text'>
+                                    Email-адрес:
+                                </p>
+                                <input class='cooperation__list-input' type="text">
+                            </li>
+                        </ul>
+                        <div class="cooperation__agree-privacy">
+                            <input class='cooperation__checkbox' type="checkbox">
+                            <p class="cooperation__checkbox-text">By clicking submit you agree to the Terms and
+                                Conditions
+                                of our
+                                Privacy Policy.</p>
+                        </div>
+                        <a class='cooperation__link' href="#">Подписаться на наши новости</a>
+                    </div>
+                    <div class="cooperation__img-container"></div>
                 </div>
             </div>
         </section>
@@ -249,9 +270,16 @@
             </div>
             <div class='footer__сopyright'>
                 <p class='footer__сopyright-text'>
-                    2016-2020 © Copyright Все права защищены.
+                    2020 © Copyright Все права защищены.
                 </p>
     </footer>
+
+    <script src="javascript/slider.js"></script>
+    <script>
+        slideShow('.slider', {
+            isAutoplay: true
+        });
+    </script>
 </body>
 
 </html>
