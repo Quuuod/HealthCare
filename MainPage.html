@@ -10,14 +10,17 @@
     <link rel="stylesheet" href="styles/headerLinks/links.css" />
     <link rel="stylesheet" href="styles/articles/articlesStyles.css" />
     <link rel="stylesheet" href="styles/slider/slider.css" />
+    <link rel="stylesheet" href="javascript/revealator-master/fm.revealator.jquery.css">
+    <link rel="stylesheet" href="styles/footer/footer.css" />
     <!-- 
     <link rel="stylesheet" href="styles/hamburgerBtn/button.css" />
-     
-    <link rel="stylesheet" href="styles/footer/footer.css" />
     <script src="javascript/dropDownButton.js" defer></script>
-     -->
+    -->
+    <script src="javascript/revealator-master/jquery-1.11.3.min.js"></script>
+    <script src="javascript/revealator-master/fm.revealator.jquery.js"></script>
     <script src="preloadAnimation.js"></script>
     <script src="javascript/HeaderResizeWhenScrolled.js" defer></script>
+    <script src="javascript/CopyPhoneNumber.js  " defer></script>
 
 
 
@@ -72,30 +75,51 @@
                 <div class="slider__wrapper">
                     <div class="slider__items">
                         <div class="slider__item">
-                            <div class='slider__item-img' style='background-image: url(slides/slide1.jpg);'></div>
+                            <a class='slider__item-img' style='background-image: url(slides/slide1.jpg);' href="#"></a>
                             <a class='slider__appearing-title' href="#">Какие услуги мы предоставляем?</a>
                         </div>
                         <div class="slider__item">
-                            <div class='slider__item-img' style='background-image: url(slides/slide2.jpg);'></div>
+                            <a class='slider__item-img' style='background-image: url(slides/slide2.jpg);' href="#"></a>
                             <a class='slider__appearing-title' href="#">Почему так важно следить за своим здоровьем?</a>
                         </div>
                         <div class="slider__item">
-                            <div class='slider__item-img' style='background-image: url(slides/slide3.jpg);'></div>
-                            <a class='slider__appearing-title' href="#">Психическое здоровье.</a>
+                            <a class='slider__item-img' style='background-image: url(slides/slide3.jpg);' href="#"></a>
+                            <a class='slider__appearing-title' href="#">Психическое здоровье - это тоже важно!</a>
                         </div>
                         <div class="slider__item">
-                            <div class='slider__item-img' style='background-image: url(slides/slide4.jpg);'></div>
-                            <a class='slider__appearing-title' href="#">Наши врачи.</a>
+                            <a class='slider__item-img' style='background-image: url(slides/slide4.jpg);' href="#"></a>
+                            <a class='slider__appearing-title' href="#">Наши специалисты</a>
                         </div>
                         <div class="slider__item">
-                            <div class='slider__item-img' style='background-image: url(slides/slide5.jpg);'></div>
-                            <a class='slider__appearing-title' href="#">CoVid 19. Меры предосторожности.</a>
+                            <a class='slider__item-img' style='background-image: url(slides/slide5.jpg);' href="#"></a>
+                            <a class='slider__appearing-title' href="#">CoVid 19. Меры предосторожности</a>
                         </div>
                     </div>
                 </div>
-                <a class="slider__control slider__control_prev" href="#" role="button"></a>
-                <a class="slider__control slider__control_next slider__control_show" href="#" role="button"></a>
+                <div class="slider__control-container">
+                    <a class="slider__control slider__control_prev" href="#" role="button"></a>
+                </div>
+                <div class="slider__control-container">
+                    <a class="slider__control slider__control_next slider__control_show" href="#" role="button"></a>
+                </div>
+            </div>
+        </section>
 
+        <section class='facts revealator-slidedown revealator-once'>
+            <div class="container">
+                <div class="facts__inner">
+                    <h2 class="facts__title">Did You Know?</h2>
+                    <p class="facts__text">
+                        BIO is the world's largest trade association representing biotechnology companies, academic
+                        institutions, state biotechnology centers and related organizations across the United States
+                        and
+                        in more than 30 other nations.
+
+                        We offer membership, events, industry analysis reports and more that serve the entire
+                        spectrum
+                        of the biotech industry.
+                    </p>
+                </div>
             </div>
         </section>
         <section class='health'>
@@ -131,7 +155,7 @@
                 </div>
             </div>
         </section>
-        <section class='facts'>
+        <section class='facts revealator-slidedown revealator-once'>
             <div class="container">
                 <div class="facts__inner">
                     <h2 class="facts__title">Did You Know?</h2>
@@ -143,13 +167,11 @@
 
                         We offer membership, events, industry analysis reports and more that serve the entire
                         spectrum
-                        of the biotech industr
+                        of the biotech industry.
                     </p>
                 </div>
             </div>
         </section>
-
-        </div>
         <section class='cooperation'>
             <div class="container">
                 <div class="cooperation__inner">
@@ -195,6 +217,23 @@
                 </div>
             </div>
         </section>
+        <section class='facts revealator-slidedown revealator-once'>
+            <div class="container">
+                <div class="facts__inner">
+                    <h2 class="facts__title">Did You Know?</h2>
+                    <p class="facts__text">
+                        BIO is the world's largest trade association representing biotechnology companies, academic
+                        institutions, state biotechnology centers and related organizations across the United States
+                        and
+                        in more than 30 other nations.
+
+                        We offer membership, events, industry analysis reports and more that serve the entire
+                        spectrum
+                        of the biotech industry.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class='container'>
@@ -235,42 +274,50 @@
                 </ul>
                 <ul class='footer__list'>
                     <li class='footer__list-item'>
-                        <h4 class="footer__list-text">article</h4>
+                        <h4 class="footer__list-text">Наши номера телефонов</h4>
                     </li>
                     <li class='footer__list-item'>
-                        <a class='footer__list-link' href='#'>Link</a>
+                        <button class = 'copy'>
+                        <a class='footer__list-link'>+375(29) 208-71-56</a>
+                    </button>
                     </li>
                     <li class='footer__list-item'>
-                        <a class='footer__list-link' href='#'>Link</a>
+                        <button class = 'copy'>
+                        <a class='footer__list-link' onclick="Copy()">+375(29) 208-71-56</a>
+                        </button>
                     </li>
                     <li class='footer__list-item'>
-                        <a class='footer__list-link' href='#'>Link</a>
+                        <button class = 'copy'>
+                        <a class='footer__list-link' onclick="Copy()">+375(29) 208-71-56</a>
+                    </button>
                     </li>
                     <li class='footer__list-item'>
-                        <a class='footer__list-link' href='#'>Link</a>
+                        <button class = 'copy'>
+                        <a class='footer__list-link' onclick="Copy()">+375(29) 208-71-56</a>
+                    </button>
                     </li>
                 </ul>
                 <ul class='footer__list'>
                     <li class='footer__list-item'>
-                        <h4 class="footer__list-text">article</h4>
+                        <h4 class="footer__list-text">Мы в соцсетях</h4>
                     </li>
                     <li class='footer__list-item'>
-                        <a class='footer__list-link' href='#'>Link</a>
+                        <a class='footer__list-link' href='#'>ВКонтакте</a>
                     </li>
                     <li class='footer__list-item'>
-                        <a class='footer__list-link' href='#'>Link</a>
+                        <a class='footer__list-link' href='#'>FaceBook</a>
                     </li>
                     <li class='footer__list-item'>
-                        <a class='footer__list-link' href='#'>Link</a>
+                        <a class='footer__list-link' href='#'>Instagram</a>
                     </li>
                     <li class='footer__list-item'>
-                        <a class='footer__list-link' href='#'>Link</a>
+                        <a class='footer__list-link' href='#'>LinkedIn</a>
                     </li>
                 </ul>
             </div>
             <div class='footer__сopyright'>
                 <p class='footer__сopyright-text'>
-                    2020 © Copyright Все права защищены.
+                    2021 © Copyright Все права защищены.
                 </p>
     </footer>
 

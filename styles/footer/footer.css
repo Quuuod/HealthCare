@@ -1,16 +1,17 @@
 .footer {
-    position: absolute;
-    bottom: 0;
     min-width: 100%;
     min-height: auto;
-    background-color: #3498DB;
+    background-color: #0CBABA;
 }
-/* .FooterNavsContainer{
-    display: flex;
-justify-content: space-around;
 
+.footer__inner {
+    display: flex;
+    justify-content: space-around;
 }
-.FooterAllUlContainer ul {
+
+.footer__list {
+    font-size: 18pt;
+    margin: 80px 0 80px 0;
     overflow: hidden;
     list-style-type: none;
     float: left;
@@ -18,81 +19,42 @@ justify-content: space-around;
     padding-right: 45px;
 }
 
-.FooterNav {
+
+.footer__list-link{
+    cursor: pointer;
     font-family: system, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Segoe WP',
         Roboto, Ubuntu, Oxygen, Cantarell, 'Fira Sans', 'Helvetica Neue', Helvetica,
         'Lucida Grande', 'Droid Sans', Tahoma, 'Microsoft Sans Serif', sans-serif;
     font-weight: 400;
-    font-size: 18px;
     line-height: 24px;
-    -webkit-transition: opacity 250ms ease 0s;
-    transition: opacity 250ms ease 0s;
+    transition: all 250ms ease 0s;
     color: #fff;
     text-decoration: none;
-}
-
-ul.FooterNav li {
-    margin: 10px;
-}
-
-ul.FooterNav+li {
-    color: rgb(255, 255, 255);
-}
-
-.FooterNav li a {
+    margin: 10px;  
     color: #fff;
     opacity: .7;
 }
 
-.FooterNav li a:hover {
+
+.footer__list-item {
+    color: rgb(255, 255, 255);
+}
+
+
+.footer__list-link:hover {
     opacity: 1;
 }
-.FooterBottomNav {
-    padding-top: 20px;
-    display: inline-block;
-    vertical-align: top;
-    width: 100%;
-    padding-bottom: 30px;
-}
 
-.FooterBottomNav a {
-    color: white;
-    font-family: system, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Segoe WP',
-        Roboto, Ubuntu, Oxygen, Cantarell, 'Fira Sans', 'Helvetica Neue', Helvetica,
-        'Lucida Grande', 'Droid Sans', Tahoma, 'Microsoft Sans Serif', sans-serif;
-    font-weight: 600;
-    font-size: 19px;
-    border: .5px solid #8a8a8a;
-    border-radius: 60px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-right: 7px;
-    margin-left: 7px;
-    transition: all .2s ease;
-}
 
-.FooterBottomNav div {
-    padding: 10px;
+
+
+.footer__сopyright {
     display: flex;
     align-items: center;
     justify-content: center
 }
 
-.FooterBottomNav a:hover {
-    border-color: white;
-    cursor: pointer;
-    transition: all .2s ease;
-}
-
-.сopyright {
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-.сopyright span {
+.footer__сopyright-text {
     font-family: system, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Segoe WP',
         Roboto, Ubuntu, Oxygen, Cantarell, 'Fira Sans', 'Helvetica Neue', Helvetica,
         'Lucida Grande', 'Droid Sans', Tahoma, 'Microsoft Sans Serif', sans-serif;
@@ -104,4 +66,19 @@ ul.FooterNav+li {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-} */
+} 
+
+.copy{
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 18pt;
+    overflow: hidden;
+    list-style-type: none;
+    float: left;
+}
+
+.footer__list-link:active{
+    color: rgb(0, 255, 200);
+    transition: 0.01s;
+}

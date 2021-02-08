@@ -14,9 +14,9 @@
 }
 
 .menu__list-item a {
-    padding-right: 20px;
+    padding-right: 15px;
     padding: 6px 12px;
-    margin: 0px 12px 0 12px;
+    margin: 0 6px 0 6px;
     border-radius: 5px;
 }
 
@@ -66,21 +66,47 @@
 }
 
 .links-top li a{
-    font-size: 12pt;
+    font-size: 14pt;
+    font-weight: 600;
     color: white;
     transition: all 0.4s;
 }
 
 .links-scrolled li a{
-    font-size: 10pt;
+    font-size: 12pt;
+    font-weight: 600;
     color: black;
     transition: all 0.4s;
 }
 
-.links-top li a:hover{
-    color: rgb(0, 79, 226);
+.links-top li a,
+.links-scrolled li a{
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+.links-top li a:after,
+.links-scrolled li a:after {
+    display: block;
+    content: "";
+    background-color: white;
+    height: 2px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .4s ease-in-out;
+    -moz--transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.links-top li a:hover:after{
+    width: 90%;
 }
 
 .links-scrolled li a:hover{
-    color:rgb(102, 156, 255);
+    color:#0CBABA;
 }
