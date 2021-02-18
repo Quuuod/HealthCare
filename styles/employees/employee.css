@@ -1,0 +1,56 @@
+section{
+    max-width: 100%;
+    max-height: 800px;
+    margin: 0;
+    padding: 160px 60px;
+    color: rgb(33, 44, 68);
+    font-size: 1.5vw;
+    z-index: 2;
+}
+#content{
+	position:relative;
+	z-index:100;
+	padding: 10px;
+	background: #D1D1D1;
+	/* My stripped background */
+    background: repeating-linear-gradient(-45deg, #0CBABA, #0CBABA 30px, #F2F2F2 30px, #F2F2F2 40px, #0CBABA 40px, #0CBABA 70px, #F2F2F2 70px, #F2F2F2 80px);
+	box-shadow:0px 1px 6px #3F3F3F;
+}
+#content:after{
+	background:#F9F9F9;
+	margin:10px;
+	position: absolute;
+	content : " ";
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: -1; 
+	border:1px #E5E5E5 solid;       
+	border-radius:8px;
+}
+
+.employee__inner{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+.employee__text-container{
+width: 75%;
+height: 400px;
+}
+
+.employee__photo-container{
+width: 25%;
+background-image: url(newsLetter.png);
+background-position-x: center;
+background-size: cover;
+background-repeat: no-repeat;
+}

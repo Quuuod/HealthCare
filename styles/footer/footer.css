@@ -10,7 +10,7 @@
 }
 
 .footer__list {
-    font-size: 18pt;
+    font-size: 2vw;
     margin: 80px 0 80px 0;
     overflow: hidden;
     list-style-type: none;
@@ -26,6 +26,7 @@
         Roboto, Ubuntu, Oxygen, Cantarell, 'Fira Sans', 'Helvetica Neue', Helvetica,
         'Lucida Grande', 'Droid Sans', Tahoma, 'Microsoft Sans Serif', sans-serif;
     font-weight: 400;
+    font-size: 2vw;
     line-height: 24px;
     transition: all 250ms ease 0s;
     color: #fff;
@@ -51,7 +52,8 @@
 .footer__сopyright {
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    padding-bottom: 12px;
 }
 
 .footer__сopyright-text {
@@ -64,7 +66,7 @@
     text-align: center;
     width: 570px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1.5vw;
     line-height: 20px;
 } 
 

@@ -35,7 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
+    width: 7vw;
     color: #fff;
     text-align: center;
     opacity: 0.5;
@@ -127,7 +127,7 @@
 
 .slider__appearing-title {
     color: white;
-    font-size: 22pt;
+    font-size: 3.5vw;
     position: absolute;
     transition: all .5s ease;
     opacity: 0;
@@ -144,3 +144,9 @@
     transition: all .5s ease;
     opacity: 1;
 }
+
+
+
+
+
+

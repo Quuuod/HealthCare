@@ -33,7 +33,7 @@
 
 .line-scrolled{
     height: 50px;
-    border-left: 1px solid black;
+    border-left: 1px solid #0CBABA;
 }
 
 .menu__search {
@@ -59,23 +59,44 @@
 }
 
 .menu__search-input {
-    font-size: 12pt;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    font-size: 1.5vw;
     border: none;
     outline: none;
     background: none;
 }
 
 .links-top li a{
-    font-size: 14pt;
+    font-size: 2.2vh;
     font-weight: 600;
     color: white;
     transition: all 0.4s;
 }
 
 .links-scrolled li a{
-    font-size: 12pt;
+    font-size: 2vh;
     font-weight: 600;
-    color: black;
+    color: #0CBABA;
     transition: all 0.4s;
 }
 
@@ -87,9 +108,9 @@
     cursor: pointer;
     position: relative;
 }
-.links-top li a:after,
-.links-scrolled li a:after {
+.links-top li a:after{
     display: block;
+    margin-top: 3px;
     content: "";
     background-color: white;
     height: 2px;
@@ -103,10 +124,32 @@
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+
+.links-scrolled li a:after {
+    display: block;
+    margin-top: 3px;
+    content: "";
+    background-color: #0CBABA;
+    height: 2px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .4s ease-in-out;
+    -moz--transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
 .links-top li a:hover:after{
     width: 90%;
 }
 
 .links-scrolled li a:hover{
     color:#0CBABA;
+}
+
+.links-scrolled li a:hover:after{
+    width: 90%;
 }
