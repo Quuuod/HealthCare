@@ -11,59 +11,81 @@
     <link rel="stylesheet" href="styles/articles/articlesStyles.css" />
     <link rel="stylesheet" href="styles/slider/slider.css" />
     <link rel="stylesheet" href="javascript/revealator-master/fm.revealator.jquery.css">
+    <link href='http://fonts.googleapis.com/css?family=Questrial|Droid+Sans|Alice' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="styles/footer/footer.css" />
-    <!-- 
     <link rel="stylesheet" href="styles/hamburgerBtn/button.css" />
-    <script src="javascript/dropDownButton.js" defer></script>
-    -->
+
     <script src="javascript/revealator-master/jquery-1.11.3.min.js"></script>
     <script src="javascript/revealator-master/fm.revealator.jquery.js"></script>
     <script src="javascript/preloadAnimation.js"></script>
     <script src="javascript/HeaderResizeWhenScrolled.js" defer></script>
     <script src="javascript/CopyPhoneNumber.js  " defer></script>
-
+    <script src="javascript/dropDownButton.js  " defer></script>
 
 
 </head>
 
 <body class='body'>
     <header class='header top'>
-        <!-- <div class="dropdown">
+        <div class="dropdown">
             <button class="dropbtn top"></button>
-            <div id="myDropdown" class="dropdown-content top">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </div> -->
-        <nav class="menu">
-            <div class="menu__list-container">
+            <div id="myDropdown" class="dropdown-content drop-top">
                 <ul class='menu__list links-top'>
-                    <li class='menu__list-item'>
+                    <li class='menu__button-item common'>
                         <a class="menu__list-link" href="MainPage.html">Главная</a>
                     </li>
-                    <li class='menu__list-item'>
+                    <li class='menu__button-item common'>
                         <a class="menu__list-link" href="Appointment.html">Запись к врачу</a>
                     </li>
-                    <li class='menu__list-item'>
+                    <li class='menu__button-item common'>
                         <a class="menu__list-link" href="Employees.html">Наши врачи</a>
                     </li>
-                    <li class='menu__list-item'>
+                    <li class='menu__button-item common'>
                         <a class="menu__list-link" href="Diagnostics.html">Диагностика и лечение</a>
                     </li>
-                    <li class='menu__list-item'>
+                    <li class='menu__button-item common'>
                         <a class="menu__list-link" href="Patients.html">Пациентам</a>
                     </li>
-                    <li class='menu__list-item'>
+                    <li class='menu__button-item common'>
                         <a class="menu__list-link" href="Help.html">Поддержка</a>
                     </li>
                 </ul>
             </div>
-            <div class="menu__line line-top"></div>
-            <div class='menu__search'>
-                <input class="menu__search-input" type="text" placeholder="Поиск">
-            </div>
+        </div>
+        <nav class="menu">
+
+            <ul class='menu__list links-top'>
+                <li class='menu__list-item common'>
+                    <a class="menu__list-link" href="MainPage.html">Главная</a>
+                </li>
+                <li class='menu__list-item common'>
+                    <a class="menu__list-link" href="Appointment.html">Запись к врачу</a>
+                </li>
+                <li class='menu__list-item common'>
+                    <a class="menu__list-link" href="Employees.html">Наши врачи</a>
+                </li>
+                <li class='menu__list-item common'>
+                    <a class="menu__list-link" href="Diagnostics.html">Диагностика и лечение</a>
+                </li>
+                <li class='menu__list-item common'>
+                    <a class="menu__list-link" href="Patients.html">Пациентам</a>
+                </li>
+                <li class='menu__list-item common'>
+                    <a class="menu__list-link" href="Help.html">Поддержка</a>
+                </li>
+            </ul>
         </nav>
+        <div class="authorization__container">
+            <ul class='menu__list authorize authorizration-top'>
+                <li class='menu__list-item authorization not-logged'>
+                    <a class="menu__list-link" href="Authorize.html">Авторизация</a>
+                </li>
+                <li class='menu__list-item authorization logged'>
+                    <a class="menu__list-link" onclick="LogOut()">Выйти</a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <main class='main'>
@@ -72,24 +94,24 @@
                 <div class="slider__wrapper">
                     <div class="slider__items">
                         <div class="slider__item">
-                            <a class='slider__item-img' style='background-image: url(slides/slide1.jpg);' href="#"></a>
-                            <a class='slider__appearing-title' href="#">Какие услуги мы предоставляем?</a>
+                            <a class='slider__item-img' style='background-image: url(slides/slide1.jpg);' href="Patients.html"></a>
+                            <a class='slider__appearing-title' href="Patients.html">Какие услуги мы предоставляем?</a>
                         </div>
                         <div class="slider__item">
-                            <a class='slider__item-img' style='background-image: url(slides/slide2.jpg);' href="#"></a>
-                            <a class='slider__appearing-title' href="#">Почему так важно следить за своим здоровьем?</a>
+                            <a class='slider__item-img' style='background-image: url(slides/slide2.jpg);' href="Diagnostics.html"></a>
+                            <a class='slider__appearing-title' href="Diagnostics.html">Почему так важно следить за своим здоровьем?</a>
                         </div>
                         <div class="slider__item">
-                            <a class='slider__item-img' style='background-image: url(slides/slide3.jpg);' href="#"></a>
-                            <a class='slider__appearing-title' href="#">Психическое здоровье - это тоже важно!</a>
+                            <a class='slider__item-img' style='background-image: url(slides/slide3.jpg);' href="Diagnostics.html"></a>
+                            <a class='slider__appearing-title' href="Diagnostics.html">Психическое здоровье - это тоже важно!</a>
                         </div>
                         <div class="slider__item">
-                            <a class='slider__item-img' style='background-image: url(slides/slide4.jpg);' href="#"></a>
-                            <a class='slider__appearing-title' href="#">Наши специалисты</a>
+                            <a class='slider__item-img' style='background-image: url(slides/slide4.jpg);' href="Employees.html"></a>
+                            <a class='slider__appearing-title' href="Employees.html">Наши специалисты</a>
                         </div>
                         <div class="slider__item">
-                            <a class='slider__item-img' style='background-image: url(slides/slide5.jpg);' href="#"></a>
-                            <a class='slider__appearing-title' href="#">CoVid 19. Меры предосторожности</a>
+                            <a class='slider__item-img' style='background-image: url(slides/slide5.jpg);' href="Diagnostics.html"></a>
+                            <a class='slider__appearing-title' href="Diagnostics.html">CoVid 19. Меры предосторожности</a>
                         </div>
                     </div>
                 </div>
@@ -105,48 +127,56 @@
         <section class='facts revealator-slidedown revealator-once'>
             <div class="container">
                 <div class="facts__inner">
-                    <h2 class="facts__title">Did You Know?</h2>
+                    <h2 class="facts__title">HealthCare</h2>
                     <p class="facts__text">
-                        BIO is the world's largest trade association representing biotechnology companies, academic
-                        institutions, state biotechnology centers and related organizations across the United States
-                        and
-                        in more than 30 other nations.
+                        осуществляет медицинскую практику по профилактике, лечению и консультации населения более чем по
+                        50 специальностям.
 
-                        We offer membership, events, industry analysis reports and more that serve the entire
-                        spectrum
-                        of the biotech industry.
+                        Высокий профессиональный уровень врачей, большой опыт и периодическое повышение квалификации
+                        позволяет нам гарантировать, что все услуги медицинского центра оказываются на высшем уровне.
+
+                        Современное высокотехнологичное оборудование и работа в соответствии с мировыми медицинскими
+                        стандартами дают возможность расширять перечень услуг медицинского центра и делать здоровыми
+                        большее число людей.
+
+                        Мы стремимся, чтобы наши цены соответствовали качеству предоставляемых услуг и вместе с тем были
+                        доступными для каждого пациента.
+
+                        Специалисты нашего центра обеспечивают комфортную обстановку благодаря вежливому и внимательному
+                        обращению к пациентам.
                     </p>
                 </div>
             </div>
         </section>
         <section class='health'>
-            <div class="container" id ='content'>
+            <div class="container" id='content'>
                 <div class="health__inner">
                     <div class="health__img-container"></div>
                     <div class='health__text-container'>
-                        <h2 class='health__title'>HEAL THE WORLD</h2>
-                        <p class="health__text">is helping to heal the world by harnessing nature's own toolbox
-                            and using our own genetic makeup to heal and guide lines of research by:
+                        <h2 class='health__title'>Наши приемущества</h2>
+                        <p class="health__text">Многопрофильная медицинская компания «HealthCare» работает с 1992 года.
+                            За
+                            почти 30 лет деятельности центры получили множество наград в своей отрасли и главное –
+                            народное доверие и признание. «HealthCare» находится в числе самых известных медицинских
+                            центров
+                            Республики Беларусь. Помощь населению оказывается по более чем 50 специальностям. Качество
+                            оказываемых услуг находится под постоянным контролем руководства компании, чтобы
+                            обслуживание пациентов соответствовало высоким мировым стандартам:
                         </p>
                         <ul class="health__list">
-                            <li class="health__list-item">Reducing rates of infectious disease;
+                            <li class="health__list-item">Высокий профессиональный уровень специалистов;
                             </li>
-                            <li class="health__list-item">Saving millions of children's lives;
+                            <li class="health__list-item">Высокое качество медицинских услуг и сервисного обслуживания;
                             </li>
-                            <li class="health__list-item">Changing the odds of serious, life-threatening
-                                conditions affecting millions around
-                                the world;</li>
-                            <li class="health__list-item">Tailoring treatments to individuals to minimize health
-                                risks and side effects;
+                            <li class="health__list-item">Ответственный и добросовестный подход к каждому пациенту;
                             </li>
-                            <li class="health__list-item">Creating more precise tools for disease detection;
+                            <li class="health__list-item">Прогрессивные методики диагностики и лечения;
                             </li>
-                            <li class="health__list-item">Combating serious illnesses and everyday threats
-                                confronting the developing world.
+                            <li class="health__list-item">Оптимальное соотношение цены и качества;
                             </li>
                         </ul>
                         <div class="health__aboutus-container">
-                            <a class="health__aboutus">Узнать больше о нас</a>
+                            <a class="health__aboutus" href="Appointment.html">Записаться на консультацию</a>
                         </div>
                     </div>
                 </div>
@@ -155,58 +185,51 @@
         <section class='facts revealator-slidedown revealator-once'>
             <div class="container">
                 <div class="facts__inner">
-                    <h2 class="facts__title">Did You Know?</h2>
+                    <h2 class="facts__title">Курс на здоровье!</h2>
                     <p class="facts__text">
-                        BIO is the world's largest trade association representing biotechnology companies, academic
-                        institutions, state biotechnology centers and related organizations across the United States
-                        and
-                        in more than 30 other nations.
+                        «HealthCare» предоставляет уникальные услуги по комплексному оздоровлению:
+                        Диагностика всего организма.
+                        Консультация высококвалифицированных врачей.
+                        Составление индивидуальных программ по результатам обследований.
+                        Оперативное лечение.
+                        В оборудованном операционном блоке проводятся манипуляции под местной и общей анестезией.
 
-                        We offer membership, events, industry analysis reports and more that serve the entire
-                        spectrum
-                        of the biotech industry.
+                        Кроме того, специалисты отделения планирования семьи и репродукции помогают выявить и решить
+                        проблемы бесплодия, в том числе с применением технологий ЭКО
                     </p>
                 </div>
             </div>
         </section>
-        <section class='cooperation' id ='content'>
+        <section class='cooperation' id='content'>
             <div class="container">
                 <div class="cooperation__inner">
                     <div class="cooperation__text-container">
-                        <u>Sign-up</u> to receive the Good Day BIO newsletter, the only daily newsletter at the
-                        intersection of biotech, politics and policy.
+                        <u>Подпишитесь</u> на нашу рассылку ,чтобы ежедневно получать советы о том, как ухаживать за
+                        своим здоровьем.
                         <ul class='cooperation__list'>
                             <li class='cooperation__list-item'>
                                 <p class='cooperation__list-text'>
                                     Имя:
                                 </p>
-                                <input class='cooperation__list-input' type="text">
+                                <input class='cooperation__list-input name' type="text">
                             </li>
                             <li class='cooperation__list-item'>
                                 <p class='cooperation__list-text'>
                                     Фамилия:
                                 </p>
-                                <input class='cooperation__list-input' type="text">
+                                <input class='cooperation__list-input surname' type="text">
                             </li>
                             <li class='cooperation__list-item'>
-                                <p class='cooperation__list-text'>
-                                    Название компании:
-                                </p>
-                                <input class='cooperation__list-input' type="text">
-                            </li>
-                            <li class='cooperation__list-item'>
-                                <p class='cooperation__list-text'>
+                                <p class='cooperation__list-text '>
                                     Email-адрес:
                                 </p>
-                                <input class='cooperation__list-input' type="text">
+                                <input class='cooperation__list-input email' type="text">
                             </li>
                         </ul>
                         <div class="cooperation__agree-privacy">
                             <input class='cooperation__checkbox' type="checkbox">
-                            <p class="cooperation__checkbox-text">By clicking submit you agree to the Terms and
-                                Conditions
-                                of our
-                                Privacy Policy.</p>
+                            <p class="cooperation__checkbox-text">Нажимая кнопку вы соглашаетесь с нашей политикой
+                                конфеденциальности и разрешаете обработку персональных данных</p>
                         </div>
                         <a class='cooperation__link' href="#">Подписаться на наши новости</a>
                     </div>
@@ -217,16 +240,23 @@
         <section class='facts revealator-slidedown revealator-once'>
             <div class="container">
                 <div class="facts__inner">
-                    <h2 class="facts__title">Did You Know?</h2>
+                    <h2 class="facts__title">Лечебно-профилактический туризм</h2>
                     <p class="facts__text">
-                        BIO is the world's largest trade association representing biotechnology companies, academic
-                        institutions, state biotechnology centers and related organizations across the United States
-                        and
-                        in more than 30 other nations.
 
-                        We offer membership, events, industry analysis reports and more that serve the entire
-                        spectrum
-                        of the biotech industry.
+                        Помимо медицинского направления, центр предоставляет услуги по организации оздоровительного
+                        досуга.
+
+                        Наши менеджеры подготовят план терапевтических мероприятий, курсов реабилитации в лучших
+                        белорусских санаториях, зарубежных курортах. Собственный пансионат – гордость «HealthCare» –
+                        находится
+                        на острове посреди Лепельского озера.
+
+                        Программы лечебного туризма во всех развитых странах стабильно остаются в перечне лучших, так
+                        как учитывают индивидуальные особенности конкретного человека. Они проходят под контролем
+                        медицинского персонала и подходят, как для профилактики конкретных заболеваний, так и для
+                        реабилитации после тяжелых травм.
+
+
                     </p>
                 </div>
             </div>
@@ -240,24 +270,24 @@
                         <h4 class="footer__list-text">Наши номера телефонов</h4>
                     </li>
                     <li class='footer__list-item'>
-                        <button class = 'copy'>
-                        <a class='footer__list-link'>+375(29) 208-71-56</a>
-                    </button>
-                    </li>
-                    <li class='footer__list-item'>
-                        <button class = 'copy'>
-                        <a class='footer__list-link'>+375(29) 208-71-56</a>
+                        <button class='copy'>
+                            <a class='footer__list-link'>+375(29) 208-71-56</a>
                         </button>
                     </li>
                     <li class='footer__list-item'>
-                        <button class = 'copy'>
-                        <a class='footer__list-link'>+375(29) 208-71-56</a>
-                    </button>
+                        <button class='copy'>
+                            <a class='footer__list-link'>+375(29) 208-71-56</a>
+                        </button>
                     </li>
                     <li class='footer__list-item'>
-                        <button class = 'copy'>
-                        <a class='footer__list-link'>+375(29) 208-71-56</a>
-                    </button>
+                        <button class='copy'>
+                            <a class='footer__list-link'>+375(29) 208-71-56</a>
+                        </button>
+                    </li>
+                    <li class='footer__list-item'>
+                        <button class='copy'>
+                            <a class='footer__list-link'>+375(29) 208-71-56</a>
+                        </button>
                     </li>
                 </ul>
                 <ul class='footer__list'>
@@ -265,16 +295,13 @@
                         <h4 class="footer__list-text">Мы в соцсетях</h4>
                     </li>
                     <li class='footer__list-item'>
-                        <a class='footer__list-link' href='#'>ВКонтакте</a>
+                        <a class='footer__list-link' href='https://vk.com/kbip_brest'>ВКонтакте</a>
                     </li>
                     <li class='footer__list-item'>
-                        <a class='footer__list-link' href='#'>FaceBook</a>
+                        <a class='footer__list-link' href='https://instagram.com/quuood?igshid=px6hycxyiaix'>Instagram</a>
                     </li>
                     <li class='footer__list-item'>
-                        <a class='footer__list-link' href='#'>Instagram</a>
-                    </li>
-                    <li class='footer__list-item'>
-                        <a class='footer__list-link' href='#'>LinkedIn</a>
+                        <a class='footer__list-link' href='https://www.linkedin.com/in/роман-марков-150a901b8'>LinkedIn</a>
                     </li>
                 </ul>
             </div>
@@ -290,6 +317,11 @@
             isAutoplay: true
         });
     </script>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
 </body>
 
 </html>

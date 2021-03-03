@@ -107,7 +107,7 @@
 }
 
 .slider__indicators li.active {
-    background-color: rgb(12, 186, 186);
+    background-color: rgba(35,43,85,0.75);
 }
 
 .slider__item-img{
@@ -127,7 +127,7 @@
 
 .slider__appearing-title {
     color: white;
-    font-size: 3.5vw;
+    font-size: 1.5em;
     position: absolute;
     transition: all .5s ease;
     opacity: 0;
@@ -137,7 +137,9 @@
 }
 
 .slider__appearing-title:hover {
-    color:  #0CBABA;
+    color:  rgb(39, 54, 139);
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.356);
+
 }
 
 .slider__item:hover .slider__appearing-title {

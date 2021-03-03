@@ -5,59 +5,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сотрудники</title>
+    <title>Записаться на приём</title>
 
     <link rel="stylesheet" href="styles/body/bodyStyles.css" />
     <link rel="stylesheet" href="styles/headerLinks/links.css" />
     <link rel="stylesheet" href="styles/footer/footer.css" />
+    <link href='http://fonts.googleapis.com/css?family=Questrial|Droid+Sans|Alice' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link rel="stylesheet" href="styles/hamburgerBtn/button.css" />
     <link rel="stylesheet" href="styles/employees/employee.css" />
 
 
     <script src="javascript/preloadAnimation.js"></script>
     <script src="javascript/HeaderResizeWhenScrolled.js" defer></script>
     <script src="javascript/CopyPhoneNumber.js  " defer></script>
+    <script src="javascript/dropDownButton.js  " defer></script>
+
 
 </head>
 
 <body class='body'>
-
     <header class='header top'>
-        <!-- <div class="dropdown">
+        <div class="dropdown">
             <button class="dropbtn top"></button>
-            <div id="myDropdown" class="dropdown-content top">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </div> -->
-        <nav class="menu">
-            <div class="menu__list-container">
+            <div id="myDropdown" class="dropdown-content drop-top">
                 <ul class='menu__list links-top'>
-                    <li class='menu__list-item'>
+                    <li class='menu__button-item common'>
                         <a class="menu__list-link" href="MainPage.html">Главная</a>
                     </li>
-                    <li class='menu__list-item'>
+                    <li class='menu__button-item common'>
                         <a class="menu__list-link" href="Appointment.html">Запись к врачу</a>
                     </li>
-                    <li class='menu__list-item'>
+                    <li class='menu__button-item common'>
                         <a class="menu__list-link" href="Employees.html">Наши врачи</a>
                     </li>
-                    <li class='menu__list-item'>
+                    <li class='menu__button-item common'>
                         <a class="menu__list-link" href="Diagnostics.html">Диагностика и лечение</a>
                     </li>
-                    <li class='menu__list-item'>
+                    <li class='menu__button-item common'>
                         <a class="menu__list-link" href="Patients.html">Пациентам</a>
                     </li>
-                    <li class='menu__list-item'>
+                    <li class='menu__button-item common'>
                         <a class="menu__list-link" href="Help.html">Поддержка</a>
                     </li>
                 </ul>
             </div>
-            <div class="menu__line line-top"></div>
-            <div class='menu__search'>
-                <input class="menu__search-input" type="text" placeholder="Поиск">
-            </div>
+        </div>
+        <nav class="menu">
+
+            <ul class='menu__list links-top'>
+                <li class='menu__list-item common'>
+                    <a class="menu__list-link" href="MainPage.html">Главная</a>
+                </li>
+                <li class='menu__list-item common'>
+                    <a class="menu__list-link" href="Appointment.html">Запись к врачу</a>
+                </li>
+                <li class='menu__list-item common'>
+                    <a class="menu__list-link" href="Employees.html">Наши врачи</a>
+                </li>
+                <li class='menu__list-item common'>
+                    <a class="menu__list-link" href="Diagnostics.html">Диагностика и лечение</a>
+                </li>
+                <li class='menu__list-item common'>
+                    <a class="menu__list-link" href="Patients.html">Пациентам</a>
+                </li>
+                <li class='menu__list-item common'>
+                    <a class="menu__list-link" href="Help.html">Поддержка</a>
+                </li>
+            </ul>
         </nav>
+        <div class="authorization__container">
+            <ul class='menu__list authorize authorizration-top'>
+                <li class='menu__list-item authorization not-logged'>
+                    <a class="menu__list-link" href="Patients.html">Войти</a>
+                </li>
+                <li class='menu__list-item authorization not-logged'>
+                    <a class="menu__list-link" href="Help.html">Регистрация</a>
+                </li>
+                <li class='menu__list-item authorization logged'>
+                    <a class="menu__list-link" href="Help.html">Выйти</a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <main class='main'>
@@ -66,10 +95,27 @@
         <section class='employee'>
             <div class="container" id='content'>
                 <div class="employee__inner">
-                    <div class="employee__photo-container right"></div>
+                    <div class="employee__photo-container right MAS"></div>
                     <div class='employee__text-container'>
-                        <h2 class='employee__title'>ФИО</h2>
-                        <p class="employee__cit">Краткая цитата</p>
+                        <h2 class='employee__title'>Селягин Максим Анатольевич - Главный врач</h2>
+                        <p class="employee__cit">"Бесплатной бывает медицина, но не лечение."</p>
+                        <p class="employee__cit">Прием граждан:
+
+                            I, II, III, IV, V четверг месяца с 08.00 до 13.00
+                            III суббота месяца с 09.00 до 12.00
+                            Кабинет №5, 2 этаж административного корпуса</p>
+                        <p class="employee__cit">
+                            Окончил Горьковский медицинский институт в 1986 году, клиническую ординатуру при
+                            Нижегородском медицинском институте в 1995 году, курс «Организация здравоохранения» кафедры
+                            общественного здоровья и организации здравоохранения Белорусской медицинской академии
+                            последипломного образования в 2017 году.
+
+                            Врач-организатор здравоохранения.
+
+                            Кандидат медицинских наук (2007 г.) Доцент по специальности "Клиническая медицина" (2013 г.)
+
+                            Награжден знаком «Отличник здравоохранения РБ» (2010 г).
+                        </p>
                     </div>
                 </div>
             </div>
@@ -77,11 +123,76 @@
 
         <section class='employee'>
             <div class="container" id='content'>
-                <div class="employee__inner"> 
-                    <div class="employee__photo-container left"></div>
+                <div class="employee__inner">
+                    <div class="employee__photo-container left CHTA"></div>
                     <div class='employee__text-container'>
-                        <h2 class='employee__title'>ФИО</h2>
-                        <p class="employee__cit">Краткая цитата</p>
+                        <h2 class='employee__title'>Черкас Татьяна Анатольевна - Заместитель главного врача</h2>
+                        <p class="employee__cit">"Светило современной матема... медицины."</p>
+                        <p class="employee__cit">Прием граждан:
+
+                            среда с 15.00 до 17.00
+                            V суббота месяца с 09.00 до 13.00
+                            Кабинет №15, 3 этаж административного корпуса</p>
+                        <p class="employee__cit">Окончила Минский государственный медицинский институт в 1987 году,
+                            клиническую ординатуру по специальности «Кардиология» на базе МГМИ в 1996 году, двухгодичный
+                            курс «Управление здравоохранением» кафедры общественного здоровья и организации
+                            здравоохранения Белорусской медицинской академии последипломного образования в 2002 году.
+
+                            Врач-организатор здравоохранения высшей квалификационной категории.
+
+                            Награждена знаком «Отличник здравоохранения РБ».
+
+                            Является главным внештатным специалистом по организации госпитальной помощи комитета по
+                            здравоохранению Мингорисполкома.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class='employee'>
+            <div class="container" id='content'>
+                <div class="employee__inner">
+                    <div class="employee__photo-container left ALM"></div>
+                    <div class='employee__text-container'>
+                        <h2 class='employee__title'>Машенский Александр Яковлевич - Специалист по физиологии труда.</h2>
+                        <p class="employee__cit">"Мамонты вот вымерли. А это потому, что они ко мне на лечение не
+                            приходили со своими больными гландами."</p>
+                        <p class="employee__cit">Прием граждан:
+
+                            вторник с 14.00 до 16.00
+                            I суббота месяца с 09.00 до 13.00
+                            Кабинет №5, 2 этаж административного корпуса</p>
+                        <p class="employee__cit">Окончил Минский государственный медицинский институт в 1992 году,
+                            Академию управления при Президенте Республики Беларусь по специальности «Деловое
+                            администрирование» в 2000 году.
+
+                            Специалист по физиологии труда здравоохранения первой квалификационной категории.
+
+                            Награжден знаком «Отличник здравоохранения Республики Беларусь».</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class='employee'>
+            <div class="container" id='content'>
+                <div class="employee__inner">
+                    <div class="employee__photo-container left ARS"></div>
+                    <div class='employee__text-container'>
+                        <h2 class='employee__title'>Атрошкин Роман Сергеевич - Врач-психиатр</h2>
+                        <p class="employee__cit">"Дедлайн заставляет людей становиться ловкими, умными и креативными.
+                            Если только это не дедлайн на кардиомониторе..."</p>
+                        <p class="employee__cit">Прием граждан:
+
+                            вторник с 10.00 до 12.00
+                            четверг с 14.00 до 16.00
+                            II суббота месяца с 09.00 до 13.00
+                            Кабинет №3, 2 этаж административного корпуса</p>
+                        <p class="employee__cit">Окончил Гродненский государственный медицинский институт в 1998 году.
+
+                            Кандидат медицинских наук, врач-психиатр высшей квалификационной категории.
+
+                            Награжден знаком «Отличник здравоохранения Республики Беларусь».</p>
                     </div>
                 </div>
             </div>

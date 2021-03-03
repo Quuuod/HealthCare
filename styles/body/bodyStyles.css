@@ -1,5 +1,5 @@
+html, body * { box-sizing: border-box; font-family: 'Open Sans', sans-serif; }
 * {
-    font-family: 'Questrial', Verdana, sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -21,10 +21,7 @@
     margin: 0;
 }
 
-a {
-    color: black;
-    text-decoration: none;
-}
+
 
 input:focus::-webkit-input-placeholder {
     color: transparent;
@@ -46,7 +43,7 @@ input:focus::-webkit-input-placeholder {
 
 .header.top {
     height: 85px;
-    background-color: #0CBABA;
+    background-color: rgba(35,43,85,0.75);
     transition: all 0.5s;
 }
 
@@ -59,4 +56,47 @@ input:focus::-webkit-input-placeholder {
 ::-webkit-input-placeholder {
     color: #BABABA;
     font-style: italic;
+}
+
+
+
+a {
+    font-weight: 600;
+    padding: 0;
+    margin: 0 0 20px 0;
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+h1 {
+    text-align: center;
+    font-size: auto;
+    font-weight: 600;
+    padding: 0;
+    margin: 0 0 20px 0;
+    position: relative;
+    color: #8C8C8C;
+}
+
+h1:after {
+    font-size: auto;
+    color: #D6CFCB;
+    content: '&';
+    text-align: center;
+    display: block;
+    max-width: 100%;
+    font-family: 'Alice', Verdana, serif;
+    text-shadow: 0px 1px 0px #fff;
+}
+
+h1:before {
+    position: absolute;
+    bottom: 15px;
+    content: ' ';
+    text-align: center;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(182, 180, 180, 0.7) 42%, rgba(180, 178, 178, 0) 43%, rgba(168, 166, 166, 0) 50%, rgba(180, 178, 178, 0) 57%, rgba(182, 180, 180, 0.7) 58%, rgba(238, 237, 237, 0.3) 90%, rgba(255, 255, 255, 0) 100%);
+    /* W3C */
 }

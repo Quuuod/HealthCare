@@ -1,60 +1,91 @@
 <!DOCTYPE html>
 <html lang="en"  class='preload'>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="styles/body/bodyStyles.css" />
-    <link rel="stylesheet" href="styles/headerLinks/links.css" />
-
-    <link rel="stylesheet" href="styles/footer/footer.css" />
-
-
-    <script src="javascript/preloadAnimation.js"></script>
-    <script src="javascript/HeaderResizeWhenScrolled.js" defer></script>
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Записаться на приём</title>
+    
+        <link rel="stylesheet" href="styles/body/bodyStyles.css" />
+        <link rel="stylesheet" href="styles/headerLinks/links.css" />
+        <link rel="stylesheet" href="styles/contact/appointment.css" />
+        <link rel="stylesheet" href="styles/footer/footer.css" />
+        <link href='http://fonts.googleapis.com/css?family=Questrial|Droid+Sans|Alice' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="fonts/stylesheet.css" />
+        <link rel="stylesheet" href="styles/hamburgerBtn/button.css" />
+    
+    
+        <script src="javascript/preloadAnimation.js"></script>
+        <script src="javascript/HeaderResizeWhenScrolled.js" defer></script>
+        <script src="javascript/CopyPhoneNumber.js  " defer></script>
+        <script src="javascript/dropDownButton.js  " defer></script>
+        
+    
+    </head>
 <body class='body'>
     <header class='header top'>
-        <!-- <div class="dropdown">
+        <div class="dropdown">
             <button class="dropbtn top"></button>
-            <div id="myDropdown" class="dropdown-content top">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+            <div id="myDropdown" class="dropdown-content drop-top">
+                            <ul class='menu__list links-top'>
+                <li class='menu__button-item common'>
+                    <a class="menu__list-link" href="MainPage.html">Главная</a>
+                </li>
+                <li class='menu__button-item common'>
+                    <a class="menu__list-link" href="Appointment.html">Запись к врачу</a>
+                </li>
+                <li class='menu__button-item common'>
+                    <a class="menu__list-link" href="Employees.html">Наши врачи</a>
+                </li>
+                <li class='menu__button-item common'>
+                    <a class="menu__list-link" href="Diagnostics.html">Диагностика и лечение</a>
+                </li>
+                <li class='menu__button-item common'>
+                    <a class="menu__list-link" href="Patients.html">Пациентам</a>
+                </li>
+                <li class='menu__button-item common'>
+                    <a class="menu__list-link" href="Help.html">Поддержка</a>
+                </li>
+            </ul>
             </div>
-        </div> -->
+        </div> 
         <nav class="menu">
-            <div class="menu__list-container">
-                <ul class='menu__list links-top'>
-                    <li class='menu__list-item'>
-                        <a class="menu__list-link" href="MainPage.html">Главная</a>
-                    </li>
-                    <li class='menu__list-item'>
-                        <a class="menu__list-link" href="Appointment.html">Запись к врачу</a>
-                    </li>
-                    <li class='menu__list-item'>
-                        <a class="menu__list-link" href="Employees.html">Наши врачи</a>
-                    </li>
-                    <li class='menu__list-item'>
-                        <a class="menu__list-link" href="Diagnostics.html">Диагностика и лечение</a>
-                    </li>
-                    <li class='menu__list-item'>
-                        <a class="menu__list-link" href="Patients.html">Пациентам</a>
-                    </li>
-                    <li class='menu__list-item'>
-                        <a class="menu__list-link" href="Help.html">Поддержка</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="menu__line line-top"></div>
-            <div class='menu__search'>
-                <input class="menu__search-input" type="text" placeholder="Поиск">
-            </div>
+
+            <ul class='menu__list links-top'>
+                <li class='menu__list-item common'>
+                    <a class="menu__list-link" href="MainPage.html">Главная</a>
+                </li>
+                <li class='menu__list-item common'>
+                    <a class="menu__list-link" href="Appointment.html">Запись к врачу</a>
+                </li>
+                <li class='menu__list-item common'>
+                    <a class="menu__list-link" href="Employees.html">Наши врачи</a>
+                </li>
+                <li class='menu__list-item common'>
+                    <a class="menu__list-link" href="Diagnostics.html">Диагностика и лечение</a>
+                </li>
+                <li class='menu__list-item common'>
+                    <a class="menu__list-link" href="Patients.html">Пациентам</a>
+                </li>
+                <li class='menu__list-item common'>
+                    <a class="menu__list-link" href="Help.html">Поддержка</a>
+                </li>
+            </ul>
         </nav>
-    </header>
+        <div class="authorization__container">
+        <ul class = 'menu__list authorize authorizration-top'>
+        <li class='menu__list-item authorization not-logged'>
+            <a class="menu__list-link" href="Patients.html">Войти</a>
+        </li>
+        <li class='menu__list-item authorization not-logged'>
+            <a class="menu__list-link" href="Help.html">Регистрация</a>
+        </li>
+        <li class='menu__list-item authorization logged'>
+            <a class="menu__list-link" href="Help.html">Выйти</a>
+        </li>
+    </ul>
+</div>
+    </header> 
 
 
     <footer class="footer">

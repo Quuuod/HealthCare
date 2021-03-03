@@ -1,10 +1,10 @@
 section{
     max-width: 100%;
-    max-height: 800px;
+    max-height: auto;
     margin: 0;
     padding: 160px 60px;
     color: rgb(33, 44, 68);
-    font-size: 1.5vw;
+    font-size: 1em;
     z-index: 2;
 }
 #content{
@@ -13,7 +13,7 @@ section{
 	padding: 10px;
 	background: #D1D1D1;
 	/* My stripped background */
-    background: repeating-linear-gradient(-45deg, #0CBABA, #0CBABA 30px, #F2F2F2 30px, #F2F2F2 40px, #0CBABA 40px, #0CBABA 70px, #F2F2F2 70px, #F2F2F2 80px);
+    background: repeating-linear-gradient(-45deg, rgba(35,43,85,0.75), rgba(35,43,85,0.75) 30px, #F2F2F2 30px, #F2F2F2 40px, rgba(35,43,85,0.75) 40px, rgba(35,43,85,0.75) 70px, #F2F2F2 70px, #F2F2F2 80px);
 	box-shadow:0px 1px 6px #3F3F3F;
 }
 #content:after{
@@ -33,7 +33,9 @@ section{
 .employee__inner{
     display: flex;
 }
-
+main{
+	background-color: white;
+}
 
 
 
@@ -45,12 +47,56 @@ section{
 .employee__text-container{
 width: 75%;
 height: 400px;
+padding: 10px;
 }
 
 .employee__photo-container{
 width: 25%;
-background-image: url(newsLetter.png);
 background-position-x: center;
 background-size: cover;
 background-repeat: no-repeat;
 }
+
+.employee__cit{
+	padding: 10px;
+}
+
+.MAS{
+	background-image: url(MAS.png);
+}
+.CHTA{
+	background-image: url(CHTA.png);
+}
+.ALM{
+	background-image: url(ALM.png);
+}
+.ARS{
+	background-image: url(ARS.png);
+}
+
+
+@media screen and (max-width:829px)
+    {
+		section{
+			font-size: 0.9em;
+			padding: 0;
+			padding-bottom: 40px;
+		}
+		section:first-of-type{
+		padding-top: 84px;
+		}
+		section:last-of-type{
+			padding-bottom: 0;
+		}
+		.employee__photo-container{
+			width: 0;
+		}
+		.employee__text-container{
+			width: 100%;
+			height: auto;
+			padding: 10px;
+			}
+			.employee__title{
+				text-align: center;
+			}
+	}

@@ -4,7 +4,7 @@ section {
     margin: 0;
     padding: 160px 60px;
     color: rgb(33, 44, 68);
-    font-size: 1.5vw;
+    font-size: 1em;
     z-index: 2;
 }
 
@@ -14,7 +14,7 @@ section {
 	padding: 10px;
 	background: #D1D1D1;
 	/* My stripped background */
-    background: repeating-linear-gradient(-45deg, #0CBABA, #0CBABA 30px, #F2F2F2 30px, #F2F2F2 40px, #0CBABA 40px, #0CBABA 70px, #F2F2F2 70px, #F2F2F2 80px);
+    background: repeating-linear-gradient(-45deg, rgba(35,43,85,0.75), rgba(35,43,85,0.75) 30px, #F2F2F2 30px, #F2F2F2 40px, rgba(35,43,85,0.75)     40px, rgba(35,43,85,0.75) 70px, #F2F2F2 70px, #F2F2F2 80px);
 	box-shadow:0px 1px 6px #3F3F3F;
 }
 #content:after{
@@ -39,7 +39,7 @@ h2 {
 }
 
 .aboutus{
-    margin-top: 80px;
+    margin-top: 85px;
     padding: 0;
     max-width: 95%;
     height: 500px;
@@ -61,10 +61,11 @@ h2 {
 }
 
 .health__text-container {
+    color: rgb(196, 196, 196);
     z-index: 3;
-    background-color: #0CBABA;
+    background-color: rgba(35,43,85,0.75);
     width: 50%;
-    padding-left: 20px;
+    padding: 0 20px 0 20px;
 }
 
 .health__list {
@@ -82,7 +83,10 @@ h2 {
 
 .health__aboutus {
     z-index: 3;
-    border: 0.5px solid #000000;
+    font-weight: 500;
+    color: rgb(196, 196, 196);
+
+    border: 0.5px solid rgb(196, 196, 196);
     padding: 6px 12px;
     margin: 0px 12px 0 12px;
     border-radius: 5px;
@@ -115,7 +119,8 @@ h2 {
 .cooperation__text-container {
     width: 75%;
     padding: 25px;
-    background-color: #0CBABA;
+    color: rgb(196, 196, 196);
+    background-color: rgba(35,43,85,0.75);
 }
 
 .cooperation__img-container {
@@ -155,12 +160,14 @@ h2 {
 }
 
 .cooperation__checkbox {
-    margin-right: 5px;
+padding-left: 40px;
 }
 
 .cooperation__link {
     z-index: 3;
-    border: 0.5px solid #000000;
+    font-weight: 500;
+    color: rgb(196, 196, 196);
+    border: 0.5px solid rgb(196, 196, 196);
     padding: 6px 12px;
     margin: 0 12px 0 0;
     border-radius: 5px;
@@ -184,7 +191,7 @@ h2 {
 .facts{
     z-index: 1;
     padding: 20px;
-    font-size: 2vw;
+    font-size: 1.2em;
     box-shadow: none;
 }
 
@@ -192,4 +199,52 @@ h2 {
     z-index: 1;
     margin: auto;
     max-width: 60%;
+}
+@media screen and (max-width:630px)
+    {
+        .facts .container{
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width:600px)
+    {
+    .health__img-container {
+        width: 0%;
+        background-image: none;
+    }
+    
+    .health__text-container {
+        z-index: 3;
+        background-color: rgba(35,43,85,0.75);
+        width: 100%;
+        padding-left: 20px;
+    }
+    .cooperation__text-container {
+        width: 100%;
+        padding: 25px;
+        background-color: rgba(35,43,85,0.75);
+    }
+    
+    .cooperation__img-container {
+        width: 0%;
+        background-image: none;
+    }
+    .cooperation__link {
+        z-index: 3;
+        border: 0.5px solid #000000;
+        padding: 6px 6px;
+        margin: 0;
+        margin-left: 10px;
+        border-radius: 5px;
+        transition: all 0.4s;
+    }
+
+    .cooperation__list-input{
+        width: 32vh;    
+        height: 3.5vh;
+        outline: none;
+        border: none;
+        border-radius: 2px;
+    }
 }

@@ -26,21 +26,12 @@
     transition: 0.5s ease;
 }
 
-.line-top{
-    border-left: 1px solid white;
-    height: 70px;
-}
-
-.line-scrolled{
-    height: 50px;
-    border-left: 1px solid #0CBABA;
-}
 
 .menu__search {
     display: flex;
     padding: 10px;
     border-radius: 5px;
-    border: 0.5px solid #0CBABA;
+    border: 0.5px solid rgba(35,43,85,0.75);
     background-color: white;
     align-items: center;
     justify-content: center;
@@ -96,7 +87,7 @@
 .links-scrolled li a{
     font-size: 2vh;
     font-weight: 600;
-    color: #0CBABA;
+    color: rgba(35,43,85,0.75);
     transition: all 0.4s;
 }
 
@@ -129,7 +120,7 @@
     display: block;
     margin-top: 3px;
     content: "";
-    background-color: #0CBABA;
+    background-color: rgba(35,43,85,0.75);
     height: 2px;
     width: 0%;
     left: 50%;
@@ -147,9 +138,34 @@
 }
 
 .links-scrolled li a:hover{
-    color:#0CBABA;
+    color:rgba(35,43,85,0.75);
 }
 
 .links-scrolled li a:hover:after{
     width: 90%;
 }
+
+.authorization{
+    
+}
+
+.logged{
+visibility: hidden;
+}
+.not-logged{
+
+}
+
+
+@media screen and (max-width:670px)
+    {
+.menu{
+    visibility: hidden;
+    width: 0;
+}
+    }
+
+    .authorization__container ul{
+        justify-content: center;
+        align-content: center;
+    }
