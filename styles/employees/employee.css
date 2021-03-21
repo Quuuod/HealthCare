@@ -52,7 +52,6 @@ padding: 10px;
 
 .employee__photo-container{
 width: 25%;
-background-position-x: center;
 background-size: cover;
 background-repeat: no-repeat;
 }
@@ -62,16 +61,24 @@ background-repeat: no-repeat;
 }
 
 .MAS{
-	background-image: url(MAS.png);
+	background-image: url(MAS.jpg);
+	background-position-x: center;
+background-position-y: center;
 }
 .CHTA{
-	background-image: url(CHTA.png);
+	background-image: url(CHTA.jpg);
+	background-position-x:-6em;
+background-position-y: center;
 }
 .ALM{
-	background-image: url(ALM.png);
+	background-image: url(ALM.jpg);
+	background-position-x: center;
+background-position-y: center;
 }
 .ARS{
-	background-image: url(ARS.png);
+	background-image: url(ARS.jpg);
+	background-position-x: center;
+background-position-y: center;
 }
 
 

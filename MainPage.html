@@ -42,10 +42,7 @@
                         <a class="menu__list-link" href="Employees.html">Наши врачи</a>
                     </li>
                     <li class='menu__button-item common'>
-                        <a class="menu__list-link" href="Diagnostics.html">Диагностика и лечение</a>
-                    </li>
-                    <li class='menu__button-item common'>
-                        <a class="menu__list-link" href="Patients.html">Пациентам</a>
+                        <a class="menu__list-link" href="Patients.html">Где нас найти</a>
                     </li>
                     <li class='menu__button-item common'>
                         <a class="menu__list-link" href="Help.html">Поддержка</a>
@@ -65,27 +62,16 @@
                 <li class='menu__list-item common'>
                     <a class="menu__list-link" href="Employees.html">Наши врачи</a>
                 </li>
+                
                 <li class='menu__list-item common'>
-                    <a class="menu__list-link" href="Diagnostics.html">Диагностика и лечение</a>
-                </li>
-                <li class='menu__list-item common'>
-                    <a class="menu__list-link" href="Patients.html">Пациентам</a>
+                    <a class="menu__list-link" href="Patients.html">Где нас найти</a>
                 </li>
                 <li class='menu__list-item common'>
                     <a class="menu__list-link" href="Help.html">Поддержка</a>
                 </li>
             </ul>
         </nav>
-        <div class="authorization__container">
-            <ul class='menu__list authorize authorizration-top'>
-                <li class='menu__list-item authorization not-logged'>
-                    <a class="menu__list-link" href="Authorize.html">Авторизация</a>
-                </li>
-                <li class='menu__list-item authorization logged'>
-                    <a class="menu__list-link" onclick="LogOut()">Выйти</a>
-                </li>
-            </ul>
-        </div>
+        
     </header>
 
     <main class='main'>
@@ -98,20 +84,20 @@
                             <a class='slider__appearing-title' href="Patients.html">Какие услуги мы предоставляем?</a>
                         </div>
                         <div class="slider__item">
-                            <a class='slider__item-img' style='background-image: url(slides/slide2.jpg);' href="Diagnostics.html"></a>
-                            <a class='slider__appearing-title' href="Diagnostics.html">Почему так важно следить за своим здоровьем?</a>
+                            <a class='slider__item-img' style='background-image: url(slides/slide2.jpg);' href="Patients.html"></a>
+                            <a class='slider__appearing-title' href="Patients.html">Наше местопложение</a>
                         </div>
                         <div class="slider__item">
-                            <a class='slider__item-img' style='background-image: url(slides/slide3.jpg);' href="Diagnostics.html"></a>
-                            <a class='slider__appearing-title' href="Diagnostics.html">Психическое здоровье - это тоже важно!</a>
+                            <a class='slider__item-img' style='background-image: url(slides/slide3.jpg);' href="Appointment.html"></a>
+                            <a class='slider__appearing-title' href="Appointment.html">Психическое здоровье - это тоже важно!</a>
                         </div>
                         <div class="slider__item">
                             <a class='slider__item-img' style='background-image: url(slides/slide4.jpg);' href="Employees.html"></a>
                             <a class='slider__appearing-title' href="Employees.html">Наши специалисты</a>
                         </div>
                         <div class="slider__item">
-                            <a class='slider__item-img' style='background-image: url(slides/slide5.jpg);' href="Diagnostics.html"></a>
-                            <a class='slider__appearing-title' href="Diagnostics.html">CoVid 19. Меры предосторожности</a>
+                            <a class='slider__item-img' style='background-image: url(slides/slide5.jpg);' href="Appointment.html"></a>
+                            <a class='slider__appearing-title' href="Appointment.html">CoVid 19. Меры предосторожности</a>
                         </div>
                     </div>
                 </div>
@@ -204,26 +190,26 @@
             <div class="container">
                 <div class="cooperation__inner">
                     <div class="cooperation__text-container">
-                        <u>Подпишитесь</u> на нашу рассылку ,чтобы ежедневно получать советы о том, как ухаживать за
+                        <u>Оставьте нам</u> свои данные ,чтобы ежедневно получать советы о том, как ухаживать за
                         своим здоровьем.
                         <ul class='cooperation__list'>
                             <li class='cooperation__list-item'>
                                 <p class='cooperation__list-text'>
                                     Имя:
                                 </p>
-                                <input class='cooperation__list-input name' type="text">
+                                <input class='cooperation__list-input name' type="text" id = 'username'>
                             </li>
                             <li class='cooperation__list-item'>
                                 <p class='cooperation__list-text'>
                                     Фамилия:
                                 </p>
-                                <input class='cooperation__list-input surname' type="text">
+                                <input class='cooperation__list-input surname' type="text" id = 'usersurname'>
                             </li>
                             <li class='cooperation__list-item'>
                                 <p class='cooperation__list-text '>
                                     Email-адрес:
                                 </p>
-                                <input class='cooperation__list-input email' type="text">
+                                <input class='cooperation__list-input email' type="text" id = 'usermail'>
                             </li>
                         </ul>
                         <div class="cooperation__agree-privacy">
@@ -231,7 +217,7 @@
                             <p class="cooperation__checkbox-text">Нажимая кнопку вы соглашаетесь с нашей политикой
                                 конфеденциальности и разрешаете обработку персональных данных</p>
                         </div>
-                        <a class='cooperation__link' href="#">Подписаться на наши новости</a>
+                        <a class='cooperation__link' id = 'submit' href="#">Подписаться на наши новости</a>
                     </div>
                     <div class="cooperation__img-container"></div>
                 </div>
@@ -319,8 +305,13 @@
     </script>
 
 
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+<script src="javascript/cooperation.js"></script>
 
 </body>
 

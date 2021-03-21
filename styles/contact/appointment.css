@@ -193,3 +193,6 @@ p {
     color: #E5224C;
 }
 
+.select{
+    height: 120px !important;
+}
